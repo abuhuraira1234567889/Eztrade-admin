@@ -1,0 +1,46 @@
+{
+  "index": {
+    "badge": "TRADE IDEAS",
+    "title": "Learn to take the signal.",
+    "highlight": "Provider by provider.",
+    "subtitle": "Educational walkthroughs on how each provider reads structure, flow, and opportunity. Study the method, then make the read yourself.",
+    "providersHeading": "Providers",
+    "empty": "Provider guides are on the way. Check back soon."
+  },
+  "providerCard": {
+    "view": "View trade ideas"
+  },
+  "provider": {
+    "backToOverview": "Back to Trade Ideas",
+    "joinTelegram": "Join Telegram group",
+    "joinTelegramHint": "Verify your username and get your group invite in Settings.",
+    "tabLive": "Live Ideas",
+    "tabHowTo": "How to Use",
+    "tabDetailed": "Detailed",
+    "videosHeading": "Training videos",
+    "comingSoonTitle": "Video coming soon",
+    "comingSoonBody": "This training is being recorded. It lands here the moment it is ready.",
+    "notFound": "Provider not found.",
+    "beginnerLabel": "{name} Trading as a Beginner (Must Watch!)",
+    "advancedLabel": "{name} Advanced Training Video (Must Watch!)",
+    "beginner": "Beginner",
+    "advanced": "Advanced",
+    "other": "Training"
+  },
+  "zen": {
+    "tagline": "Zen trade ideas are coming soon. A calm, structured approach to the markets, built to complement Synergy, PulseX and Nova.",
+    "rules": "🧘 Zen trade ideas are coming soon.\n\nThe full rules are being finalised and will appear here shortly.\n\nIn the meantime:\n- Manage risk on every position.\n- Use 0.01 lot per $100 in your balance as a guideline.\n- Follow the plan, trust the process."
+  },
+  "nova": {
+    "tagline": "Intraday Gold (XAU/USD) trade ideas driven by structure, momentum, and market timing. A second perspective to help you navigate the markets confidently.",
+    "rules": "When a trade idea gives us 45 to 65+ pips or reaches a 1:2 risk-to-reward, follow these steps.\n\n◆ Secure your trade\n- Close half of your lot size, or\n- Set Stop Loss to Entry (Break-even).\n\nThis protects your capital if the market reverses unexpectedly.\n\n◆ Risk Management Tip\n- Use 0.01 lot per $100 in your balance as a guideline to manage risk effectively.\n\n📌 Always manage risk wisely. Follow the strategy. Trust the process. 💰"
+  },
+  "pulsex": {
+    "tagline": "Our premium Gold (XAU/USD) trade ideas based on clean price action, focusing on intraday setups with occasional scalps. Follow this channel to stay aligned with the market's pulse.",
+    "rules": "1 🎯 Entries\n- Always enter on the first touch of the entry zone.\n- If you receive two entries (example: Buy Gold 4015 to 4012, SL 4010); enter small lot at 4015, wait for 4012 to layer the zone, and use proper risk management when layering.\n\n2 🎯 Take Profit Strategy\n- TP1: 30 to 50 pips. Secure 50% of your position, or set SL to Break Even (BE).\n- TP2: 60 to 90 pips. Secure 75% of your position.\n- Runner: leave 25% running for 150 to 300 pips 🚀\n\n3 💰 Risk Management\n- Use 0.01 lot size for every $100 in your balance.\n- Example: $500 balance → 0.05 lot. $1,000 balance → 0.10 lot.\n- Keep your risk small and consistent.\n\n4 ⚡ Trade Types\n- 20-pip SL = SCALP trade.\n- If you see BUY GOLD NOW or SELL GOLD NOW, enter immediately with a small lot size.\n\n5 📌 Important Rules\n- If we say CUT LOSS, close the trade immediately. ❌\n- Only re-enter if we write REENTER 🔄\n- Do not get confused if we buy and sell in the same zone, we trade live price action.\n- If a stop loss hits, stay calm, stick to the plan, and avoid overtrading. 🧘\n\nStay disciplined, follow instructions, and trust the process."
+  },
+  "synergy": {
+    "tagline": "Synergy delivers high-frequency institutional order-flow insights on Gold throughout the day, providing continuous directional guidance on structure, flow, and evolving market opportunities.",
+    "rules": "1 🎯 Discipline & Consistency\n- Approach every Synergy signal the same way.\n- Follow the system mechanically.\n- Maintain consistent position sizing across trades.\n- Remove emotion from your decisions.\n\n2 📏 Position Sizing\n- Use standard lot sizes on every valid setup.\n- Reduce size by one-third for High risk signals.\n- Avoid increasing size based on confidence or emotion.\n\n3 ⚡ Entry Rules\n- Match price to the first four digits of the quoted level.\n- Use buy limit / sell limit orders at the exact entry stated.\n- If you miss the entry, wait for a pullback - do not chase.\n- Never enter late after price has already moved significantly.\n\n4 💰 Take Profit Structure\n- Take-profit levels are spaced at uniform intervals - respect TP1 and TP2.\n- A trade stays valid until TP2 is hit or stop loss is taken.\n- Once TP1 is hit, we relinquish responsibility - but you may still enter if TP2 has not been hit.\n\n5 🛑 Stop Loss Rules\n- Every trade must have a stop loss placed at entry.\n- When we announce risk-free, move stop loss to the price stated immediately.\n- Never widen a stop loss under any circumstances.\n\n6 ✅ Trade Validity\n- A trade is active until TP2 (complete) or stop loss (invalidated) is hit.\n\n7 🧠 Behaviour Rules\n- No revenge trading, overtrading, emotional sizing, or impulsive entries.\n- If you hesitated and missed the entry, wait for a pullback or stand down entirely.\n\n8 ⚙️ Execution Standard\n- Signals are structured orders - not suggestions or optional ideas.\n- You are either following the plan, or not in the trade at all."
+  }
+}

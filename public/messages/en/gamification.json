@@ -1,0 +1,29 @@
+{
+  "streak": {
+    "title": "Your week",
+    "subtitle": "Show up daily to build your streak.",
+    "dayCount_zero": "No streak yet",
+    "dayCount_one": "{count} day streak",
+    "dayCount_other": "{count} day streak",
+    "longest_one": "Longest streak: {count} day",
+    "longest_other": "Longest streak: {count} days",
+    "today": "Today",
+    "active": "active",
+    "inactive": "not active",
+    "days": {
+      "mon": "Mon",
+      "tue": "Tue",
+      "wed": "Wed",
+      "thu": "Thu",
+      "fri": "Fri",
+      "sat": "Sat",
+      "sun": "Sun"
+    }
+  },
+  "recognition": {
+    "title": "Recognition",
+    "subtitle": "Badges you have earned for showing up and getting involved.",
+    "empty": "No recognition badges yet. Log in daily and complete activities to start earning them.",
+    "earnedOn": "Earned {date}"
+  }
+}

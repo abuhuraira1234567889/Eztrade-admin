@@ -1,0 +1,66 @@
+{
+  "index": {
+    "badge": "ACADEMY",
+    "title": "Learn the craft.",
+    "highlight": "In your language.",
+    "subtitle": "{count} courses to help you master trading fundamentals and strategies.",
+    "continueLearning": "Continue learning",
+    "continueReading": "Continue reading",
+    "allCourses": "All courses",
+    "lessons": "lessons",
+    "locked": "Locked",
+    "completed": "Completed"
+  },
+  "courseCard": {
+    "minutes": "{count} min",
+    "lessons": "{count} lessons",
+    "percentComplete": "{percent}% complete",
+    "comingSoon": "Coming soon"
+  },
+  "course": {
+    "backToAcademy": "Back to Academy",
+    "minutes": "{count} min",
+    "lessons": "{count} lessons",
+    "percentComplete": "{percent}% complete",
+    "startCourse": "Start course",
+    "continueLearning": "Continue learning",
+    "moduleHeading": "Module {order} · {title}",
+    "lessonMinutes": "{count} min",
+    "defaultModule": "Lessons"
+  },
+  "lesson": {
+    "backToCourse": "Back to {title}",
+    "videoComingSoonTitle": "Lesson video coming soon",
+    "videoComingSoonBody": "Recording in progress. The video lands here once it's ready.",
+    "lessonOf": "Lesson {current} of {total}",
+    "completed": "Completed",
+    "quiz": {
+      "eyebrow": "Quick check",
+      "title": "One question before the next lesson",
+      "body": "A short check ships with every lesson. Passing it awards 50 XP and unlocks the next video. For now, mark complete to advance.",
+      "tag": "Quiz · coming in V1.1"
+    },
+    "previousCourse": "Course",
+    "next": "Next: {title}",
+    "outline": "Course outline",
+    "moduleHeading": "Module {order} · {title}",
+    "defaultModule": "Lessons",
+    "nextShort": "Next"
+  },
+  "markComplete": {
+    "completed": "Completed",
+    "saving": "Saving…",
+    "markComplete": "Mark complete",
+    "xpEarned": "+10 XP"
+  },
+  "lessonContent": {
+    "whyThisMatters": "Why this matters",
+    "keyConcepts": "Key concepts",
+    "realWorldSnapshot": "Real-world snapshot",
+    "applyItNow": "Apply it now",
+    "askThePTCoach": "Ask the ET Coach",
+    "openInCoach": "Open in Coach",
+    "takeaway": "Takeaway"
+  },
+  "nextShort": "Next"
+}

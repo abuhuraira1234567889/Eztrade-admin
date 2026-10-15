@@ -1,0 +1,25 @@
+{
+  "header": {
+    "badge": "INTERNAL · TEST",
+    "title": "Scanner test.",
+    "highlight": "TradingView Trading Terminal preview.",
+    "subtitle": "Proving we can swap the current scanner for the licensed TradingView Trading Terminal, with our market data and our indicators on top."
+  },
+  "about": {
+    "title": "What this page does",
+    "body": "The chart below is the self-hosted TradingView Trading Terminal v31.2.0 bundle, the same product that runs at tradingview.lovfx.com. It loads from /charting_library/ on this domain and pulls market data through the existing /api/market-data/candles route.",
+    "note": "This is a feasibility test, not a launch. Save and load, broker order entry, and account manager panels are intentionally disabled. Built-in studies (MACD, RSI) load on mount to prove the indicator API works."
+  },
+  "verify": {
+    "title": "What to check",
+    "item1": "Chart renders with candles for EUR/USD on the 60-minute timeframe.",
+    "item2": "Toolbar shows drawing tools, indicator picker, timeframe selector, replay button.",
+    "item3": "MACD and RSI appear as separate panels under the candles.",
+    "item4": "Symbol search opens and returns the small built-in catalogue."
+  },
+  "status": {
+    "loading": "Booting Trading Terminal…",
+    "errorTitle": "Trading Terminal failed to boot",
+    "errorBody": "Check the browser console. Most likely a missing bundle file under /charting_library/bundles/."
+  }
+}

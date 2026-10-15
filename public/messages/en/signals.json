@@ -1,0 +1,112 @@
+{
+  "header": {
+    "badge": "MARKET INSIGHTS",
+    "title": "Every call.",
+    "highlight": "Every reason.",
+    "subtitle": "One feed. One filter. Both columns move together.",
+    "joinTelegram": "Join Telegram Group"
+  },
+  "streams": {
+    "synergy": { "tagline": "Multi-confluence flagship" },
+    "pulsex": { "tagline": "Short-term scalper" },
+    "nova": { "tagline": "Swing & position" },
+    "zen": { "tagline": "Minimal high-conviction" }
+  },
+  "stats": {
+    "callsThisWeek": "Calls this week",
+    "tpHits": "TP hits",
+    "slHits": "SL hits",
+    "winRate": "Win rate"
+  },
+  "filters": {
+    "allStreams": "All streams",
+    "allStatus": "All status",
+    "open": "Open",
+    "closed": "Closed"
+  },
+  "split": {
+    "stream": "Stream",
+    "calls": "Calls",
+    "last": "last {count}"
+  },
+  "list": {
+    "empty": "No calls yet for the selected filter."
+  },
+  "row": {
+    "entry": "Entry {value}",
+    "sl": "SL {value}",
+    "tp1": "TP1 {value}",
+    "tp2": "TP2 {value}",
+    "tp3": "TP3 {value}"
+  },
+  "direction": {
+    "buy": "buy",
+    "sell": "sell"
+  },
+  "copy": {
+    "copied": "Copied",
+    "copiedLabel": "{label} copied",
+    "copyTitle": "Copy {label}",
+    "value": "value"
+  },
+  "confidence": {
+    "high": "High",
+    "solid": "Solid",
+    "moderate": "Moderate",
+    "low": "Low"
+  },
+  "status": {
+    "open": "Open",
+    "closed": "Closed",
+    "tp1Hit": "TP1 hit",
+    "tp2Hit": "TP2 hit",
+    "tp3Hit": "TP3 hit",
+    "slHit": "SL hit",
+    "cancelled": "Cancelled"
+  },
+  "time": {
+    "justNow": "just now",
+    "minutesAgo": "{minutes}m ago",
+    "hoursAgo": "{hours}h ago",
+    "daysAgo": "{days}d ago"
+  },
+  "feed": {
+    "anon": "Anon",
+    "edited": "edited",
+    "liveNote": "Live · updates as new messages land",
+    "lightboxClose": "Close (ESC)",
+    "lightboxDownload": "Download",
+    "photoAlt": "Telegram attachment",
+    "photoTitle": "Click to view full size",
+    "newSignal": "New call",
+    "newStream": "New {stream}",
+    "newMessageFallback": "New message in the feed",
+    "empty": {
+      "title": "Nothing in the feed yet",
+      "body": "Synergy, PulseX, Nova, Zen and Announcements land here as analysts post."
+    },
+    "day": {
+      "today": "Today",
+      "yesterday": "Yesterday"
+    }
+  },
+  "detail": {
+    "back": "Back to Market Insights",
+    "levels": {
+      "entry": "Entry",
+      "stopLoss": "Stop loss",
+      "tp1": "TP 1",
+      "tp2": "TP 2",
+      "tp3": "TP 3"
+    },
+    "originalMessage": "Original message",
+    "updates": "Updates",
+    "noUpdates": "No updates yet.",
+    "adminOverride": "admin override",
+    "aiConfidence": "AI {percent}%",
+    "disclaimer": {
+      "label": "Educational content only.",
+      "body": "Trading involves risk. Treat calls as ideas, not advice. Apply your own risk management. Your decisions are your own."
+    }
+  }
+}

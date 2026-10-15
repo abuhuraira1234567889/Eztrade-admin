@@ -1,0 +1,48 @@
+{
+  "slug": "eztrade",
+  "generatedAt": "2026-10-15T13:50:14.224Z",
+  "upstreamSha": "4fe8b5c864afdb55e8be4feedcb29975df786a23",
+  "enabled": [
+    "academy",
+    "admin_console",
+    "ai_coach",
+    "ambassador",
+    "announcements",
+    "auth_accounts",
+    "broker",
+    "competitions",
+    "compliance",
+    "dashboard",
+    "free_access",
+    "geo",
+    "journal",
+    "leaderboards",
+    "live_sessions",
+    "market_data",
+    "milestones",
+    "push",
+    "qa",
+    "quizzes",
+    "rbac",
+    "referrals",
+    "rewards_core",
+    "scanners",
+    "signals",
+    "support",
+    "telegram",
+    "theming_i18n",
+    "trade_ideas"
+  ],
+  "stripped": [
+    "access_bot",
+    "analytics",
+    "ib_portal",
+    "pro_copy",
+    "wl_builder"
+  ],
+  "runtimeOff": [
+    "equity"
+  ],
+  "verifyOk": true,
+  "app": "admin"
+}

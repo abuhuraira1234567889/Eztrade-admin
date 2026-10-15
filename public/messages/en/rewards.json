@@ -1,0 +1,360 @@
+{
+  "overview": {
+    "badge": "REWARDS & XP",
+    "title": "Climb the ladder.",
+    "highlight": "Redeem the prize.",
+    "subtitle": "Lessons, journaled trades, qualified referrals. They all earn XP. Spend it on the prize wall.",
+    "howXpWorks": {
+      "title": "How XP works",
+      "body": "Lessons earn 10 XP. Quiz passes 50 XP. Journaled trades 5 XP. Qualified referrals 500 XP. Competition wins 250 XP+. XP unlocks badges, leaderboard position, and prize-wall redemptions. Nothing decays."
+    },
+    "firstRun": {
+      "title": "Your status starts here",
+      "body": "No XP yet. Finish a lesson to put your first points on the board.",
+      "cta": "Complete your first lesson to earn XP →"
+    },
+    "stats": {
+      "currentRank": "Current status",
+      "rankPreview": "Preview",
+      "rankNext": "Next: {name}",
+      "rankTop": "Top status",
+      "rankTip": "Your status moves with your account balance. Every status unlocks the full platform.",
+      "totalXp": "Total XP",
+      "totalXpLatest": "+{points} latest",
+      "totalXpFirst": "Earn your first XP",
+      "totalXpTip": "Lifetime XP. Spend it on the prize wall without losing status.",
+      "badgesEarned": "Badges earned",
+      "badgesSub": "View collection ↓",
+      "badgesTip": "Milestones: first verified trade, course finisher, top referrer. Visible on your public profile.",
+      "qualifiedReferrals": "Qualified referrals",
+      "qualifiedReferralsSub": "Per ref: +500 XP",
+      "qualifiedReferralsTip": "Friends who signed up, verified, and placed a closed trade. 30-day clawback if they withdraw early."
+    },
+    "subnav": {
+      "rank": "Status ladder",
+      "referrals": "Referrals",
+      "competitions": "Competitions",
+      "leaderboards": "Leaderboards"
+    },
+    "publicProfile": {
+      "title": "Make your trader profile public",
+      "body": "Pick a username and go public to share your status, badges and referrals at <code>/u/yourname</code>.",
+      "cta": "Set up →"
+    },
+    "recentXp": {
+      "title": "Recent XP activity",
+      "subtitle": "Last 8 events",
+      "empty": "No XP yet. Complete a lesson to start."
+    },
+    "badges": {
+      "title": "Your badges",
+      "subtitle": "Visible on your public profile.",
+      "empty": "No badges yet. Verify your account, finish a course, or refer a trader."
+    },
+    "globalLeaderboard": {
+      "title": "Global leaderboard",
+      "subtitle": "Top traders by XP.",
+      "empty": "Be the first to top the board. Set your profile public.",
+      "refs": "{count} refs",
+      "seeFull": "See full leaderboards →"
+    },
+    "time": {
+      "justNow": "just now",
+      "minutesAgo": "{count}m ago",
+      "hoursAgo": "{count}h ago",
+      "daysAgo": "{count}d ago"
+    }
+  },
+  "rank": {
+    "badge": "MEMBER STATUS",
+    "title": "The",
+    "highlight": "status ladder.",
+    "subtitle": "Your status rises with your account balance and activity, all the way to VIP. Higher ranks unlock more.",
+    "yourRank": "Your status",
+    "rankBadgeAlt": "{name} status badge",
+    "youAreHere": "You are here",
+    "unlocked": "Unlocked",
+    "locked": "Locked",
+    "fullPlatform": {
+      "title": "What your status unlocks",
+      "intro": "Included at your current status:",
+      "items": {
+        "academy": "Full Academy library (12 courses + quizzes)",
+        "signals": "All 4 trade ideas (Synergy, PulseX, Nova, Zen)",
+        "journal": "Trade Journal with ET Score",
+        "scanner": "Cypher Scanner",
+        "analytics": "Performance analytics",
+        "profile": "Public profile",
+        "support": "Priority support",
+        "aiCoach": "AI Coach"
+      }
+    },
+    "howRanksWork": {
+      "title": "How status works",
+      "items": {
+        "computed": "Your status moves with your account balance.",
+        "active": "Each status requires <strong>at least 2 lots traded within the last 30 days</strong> to stay active. Newly verified members get a 30-day grace.",
+        "grace": "If you fall below threshold or stop trading, you enter a <strong>14-day grace</strong>. Re-deposit or trade and your status restores.",
+        "reset": "After 90 days inactive, stats and XP reset. We'll remind you before the cliff.",
+        "perCountry": "Thresholds vary <strong>by country</strong>."
+      },
+      "seePrizeWall": "See the prize wall"
+    }
+  },
+  "leaderboards": {
+    "badge": "LEADERBOARDS",
+    "title": "Where do",
+    "highlight": "you stand.",
+    "subtitle": "Global, by country, by status. Filter by today, this week, this month, or all-time XP.",
+    "yourRank": "Your rank",
+    "scopes": {
+      "global": "Global",
+      "country": "By country",
+      "tier": "By status"
+    },
+    "ranges": {
+      "alltime": "All time",
+      "yesterday": "Yesterday",
+      "today": "Today",
+      "weekly": "This week",
+      "monthly": "This month"
+    },
+    "table": {
+      "rank": "#",
+      "member": "Member",
+      "country": "Country",
+      "tierRank": "Status",
+      "weekXp": "Week XP",
+      "periodXp": "XP gained",
+      "totalXp": "Total XP",
+      "empty": "No data yet. Be the first to climb.",
+      "anon": "Anon",
+      "you": "(you)"
+    },
+    "footer": "All members with XP on the selected range are ranked. Customize your public page in",
+    "footerLink": "Public Profile settings",
+    "filters": {
+      "scopeLabel": "Scope",
+      "rangeLabel": "Time range",
+      "countryLabel": "Country",
+      "rankLabel": "Rank",
+      "allCountries": "All countries",
+      "allRanks": "All ranks"
+    }
+  },
+  "competitions": {
+    "badge": "COMPETITIONS",
+    "title": "Compete monthly.",
+    "highlight": "Win real prizes.",
+    "subtitle": "Best ET Score. Biggest gain %. Most consistent journaler. Resolves at month-end. Winners get badges, leaderboard standing, and a pick from the prize wall.",
+    "kind": {
+      "ptScore": "Best ET Score",
+      "gainPct": "Biggest gain %",
+      "consistency": "Most consistent journaler",
+      "riskAdjusted": "Best risk-adjusted return",
+      "drawdown": "Smallest drawdown"
+    },
+    "live": {
+      "heading": "Live now",
+      "emptyTitle": "No live competitions right now",
+      "emptyBody": "The next contest opens on the 1st of the month.",
+      "badge": "Live"
+    },
+    "upcoming": {
+      "heading": "Upcoming",
+      "empty": "No upcoming competitions. The next month's roster is posted on the 25th."
+    },
+    "past": {
+      "heading": "Past competitions",
+      "empty": "No history yet. Be in the first hall of fame.",
+      "endedOn": "ended {date}",
+      "results": "Results"
+    },
+    "card": {
+      "timeLeft": "{days}d {hours}h left",
+      "liveLeaderboard": "Live leaderboard",
+      "viewDetails": "View details"
+    },
+    "detail": {
+      "backToAll": "All competitions",
+      "upcomingPill": "Upcoming",
+      "endedPill": "Ended",
+      "rulesHeading": "Rules",
+      "rulesEmpty": "No rules posted for this contest.",
+      "prizePoolHeading": "Prize pool",
+      "prizePoolBody": "Top finishers split the pool. Winners pick from the prize wall, capped at the prize value.",
+      "prizePoolUsd": "${amount} prize pool",
+      "globalLeaderboardsTitle": "All-time leaderboard",
+      "globalLeaderboardsBody": "Looking for the full XP ladder across every contest and lifetime points?",
+      "globalLeaderboardsCta": "Open global leaderboards",
+      "standingsHeading": "Standings",
+      "standingsEmpty": "No entries yet. The first members to qualify will appear here.",
+      "standingsUpcoming": "Standings open when the competition starts.",
+      "yourRank": "Your rank",
+      "tableRank": "#",
+      "tableMember": "Member",
+      "tableTier": "Status",
+      "tablePoints": "Points",
+      "anon": "Anon",
+      "you": "(you)",
+      "rule": {
+        "tierMin": "Minimum status",
+        "minTrades": "Minimum trades",
+        "maxDrawdownPct": "Max drawdown",
+        "topWinners": "Top winners",
+        "prizePoolUsd": "Prize pool"
+      },
+      "eligibilityHeading": "Eligibility",
+      "noRules": "No specific rules for this competition."
+    },
+    "howItWorks": {
+      "title": "How competitions work",
+      "items": {
+        "autoEntered": "Every active member is auto-entered. No sign-up.",
+        "autoMetric": "The metric runs against your journal automatically. No submissions, no spreadsheets.",
+        "endOfMonth": "Leaderboard locks at month-end. Top 3 get a public shout-out, badge, and XP boost.",
+        "antiFraud": "Recent claw-backs or suspicious patterns trigger compliance review before payout."
+      },
+      "winnerPickPrefix": "Winners pick first from the",
+      "winnerPickSuffix": "(capped at the prize value).",
+      "prizeWallLink": "prize wall"
+    },
+    "join": {
+      "cta": "Join competition",
+      "joining": "Joining…",
+      "entered": "You're entered",
+      "failed": "Couldn't join. Try again.",
+      "opensWhenLive": "Joining opens when the competition goes live."
+    },
+    "rules": {
+      "tierMin": "Minimum status",
+      "minTrades": "Minimum trades",
+      "maxDrawdownPct": "Max drawdown %",
+      "topWinners": "Top winners",
+      "prizePoolUsd": "Prize pool (USD)"
+    }
+  },
+  "prizes": {
+    "badge": "PRIZE WALL",
+    "title": "Spend XP on",
+    "highlight": "real things.",
+    "subtitle": "A Rolex. A holiday. A funded account. A raffle ticket. Spend the XP you've earned.",
+    "yourXp": "Your XP",
+    "inProgress": {
+      "heading": "In-progress redemptions",
+      "ordered": "{xp} XP · ordered {date}"
+    },
+    "status": {
+      "pending": "pending",
+      "approved": "approved",
+      "shipped": "shipped"
+    },
+    "card": {
+      "xpCost": "{xp} XP",
+      "lowStock": "only {count} left"
+    },
+    "empty": {
+      "title": "Prize wall coming soon",
+      "body": "We're stocking the wall. Check back tomorrow."
+    },
+    "howRedemptionWorks": {
+      "title": "How redemption works",
+      "items": {
+        "pick": "Pick a prize. Hit Redeem. Add shipping (or your TradeQuo UID for a funded account).",
+        "review": "Compliance reviews within 24-48 hours. Your XP is held, not debited.",
+        "approved": "Approved → fulfilment begins. Physical goods ship with tracking. Funded accounts credit via TradeQuo.",
+        "raffles": "Raffles draw at month-end. Winners get an email, a bot ping, and a leaderboard shout-out.",
+        "rejected": "Rejected redemptions return your XP instantly, with the full reason."
+      }
+    },
+    "earnMore": {
+      "prefix": "Need to earn more XP?",
+      "finishLesson": "Finish a lesson",
+      "journalTrade": "journal a trade",
+      "referFriend": "refer a friend"
+    },
+    "errors": {
+      "notSignedIn": "Not signed in",
+      "prizeNotAvailable": "Prize not available",
+      "notEnoughXp": "Not enough XP",
+      "outOfStock": "Out of stock"
+    },
+    "redeem": {
+      "needMoreXp": "Need more XP",
+      "sentForReview": "Sent for review",
+      "validationError": "Name and shipping address are required.",
+      "button": "Redeem",
+      "xpCost": "{xp} XP",
+      "reviewNote": "Compliance reviews high-value redemptions within 24-48 hours. XP debits on approval.",
+      "fieldName": "Full name (matches ID)",
+      "fieldAddress": "Shipping address",
+      "fieldAddressPlaceholder": "Street, city, postcode, country",
+      "fieldPhone": "Phone (for courier)",
+      "cancel": "Cancel",
+      "submitting": "Submitting…",
+      "submit": "Submit for review"
+    }
+  },
+  "referrals": {
+    "title": "Referrals",
+    "subtitle": "Invite a trader. They fund a TradeQuo account. You earn XP.",
+    "linkLabel": "Your EZ Trade referral link",
+    "puWarningPrefix": "Add your",
+    "puWarningBold": "TradeQuo sub-IB link",
+    "puWarningMid": "in",
+    "puWarningLink": "Profile settings",
+    "puWarningSuffix": "so referrals attribute to your sub-IB at the broker too.",
+    "stats": {
+      "totalSignups": "Total signups",
+      "pending": "Pending",
+      "qualified": "Qualified",
+      "xpEarned": "XP earned"
+    },
+    "tableHeading": "Your referrals",
+    "empty": "No referrals yet. Share your link to start.",
+    "anon": "Anon",
+    "unknown": "Unknown",
+    "signedUp": "Signed up {time}",
+    "clawback_one": "{count} referral clawed back (withdrew below threshold within 30 days).",
+    "clawback_other": "{count} referrals clawed back (withdrew below threshold within 30 days).",
+    "status": {
+      "clawedBack": "Clawed back",
+      "qualified": "Qualified",
+      "verifying": "Verifying",
+      "signedUp": "Signed up",
+      "active": "Active",
+      "pending": "Pending"
+    },
+    "nextStep": {
+      "withdrew": "Withdrew within 30d",
+      "credited": "+500 XP credited",
+      "needsVerify": "Needs to verify broker",
+      "verifying": "Verifying",
+      "justActivated": "Just activated · XP coming",
+      "none": "-",
+      "clawedBack": "Withdrew within 30d",
+      "qualified": "+500 XP credited",
+      "pending": "Pending qualification"
+    },
+    "schedule": {
+      "heading": "How XP works",
+      "signUp": "Referral signs up",
+      "deposit": "Referral deposits ≥ $250",
+      "firstTrade": "Referral places first qualifying trade (becomes Active)",
+      "clawbackLabel": "Clawback:",
+      "clawbackBody": "if a referral withdraws below $250 within 30 days of qualifying, the +500 XP is reversed."
+    },
+    "time": {
+      "justNow": "just now",
+      "minutesAgo": "{count}m ago",
+      "hoursAgo": "{count}h ago",
+      "daysAgo": "{count}d ago",
+      "today": "Today",
+      "yesterday": "Yesterday"
+    },
+    "copy": {
+      "copy": "Copy link",
+      "copied": "Copied"
+    }
+  }
+}

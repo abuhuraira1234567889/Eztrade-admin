@@ -1,0 +1,35 @@
+{
+  "admin": {
+    "title": "Account eligibility",
+    "subtitle": "Each country maps to a balance-minimum bucket. Move a country between buckets to change the minimum balance applied to members from that country.",
+    "bucketHigher": "$300 minimum",
+    "bucketLower": "$200 minimum",
+    "searchPlaceholder": "Search country code",
+    "columnCountry": "Country code",
+    "columnBucket": "Bucket",
+    "moveToHigher": "Set $300",
+    "moveToLower": "Set $200",
+    "saved": "Saved",
+    "saveError": "Could not save. Try again.",
+    "empty": "No countries match your search.",
+    "count": "{count} countries"
+  },
+  "suspended": {
+    "eyebrow": "Account eligibility",
+    "title": "Your account needs attention",
+    "intro": "Membership access pauses when an account falls below its requirements. Resolve the item below to restore access.",
+    "needBalance": "Your account balance is below the {min} minimum for your region. Top up to at least {min} to continue.",
+    "needLots": "You need at least {lots} lots traded in the current calendar month. You currently have {current}.",
+    "needBoth": "Your balance is below the {min} minimum and you are short on this month's {lots} lots of trading activity.",
+    "currentBalance": "Current balance",
+    "lotsThisMonth": "Lots this month",
+    "requiredBalance": "Required minimum",
+    "requiredLots": "Required lots",
+    "recheck": "Re-check my account",
+    "rechecking": "Re-checking...",
+    "stillShort": "You are not eligible yet. Here is what is still needed.",
+    "restored": "Access restored. Redirecting you to your dashboard.",
+    "manageAccount": "Manage account",
+    "contactSupport": "Contact support"
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "header": {
+    "badge": "LIVE SESSIONS",
+    "title": "Trade live.",
+    "highlight": "With our analysts.",
+    "subtitle": "Trading rooms, recaps, and AMAs. Two to three sessions weekly. All recorded and translated."
+  },
+  "tierGate": {
+    "what": "Live trading rooms"
+  },
+  "actions": {
+    "notSignedIn": "Not signed in."
+  },
+  "empty": "No upcoming sessions yet.",
+  "dayHeading": {
+    "today": "TODAY · {date}",
+    "tomorrow": "TOMORROW · {date}"
+  },
+  "thisMonth": {
+    "label": "This month",
+    "sessions_one": "{count} session",
+    "sessions_other": "{count} sessions",
+    "rsvps_one": "{count} confirmed RSVP for you.",
+    "rsvps_other": "{count} confirmed RSVPs for you."
+  },
+  "calendarStrip": {
+    "live": "{count} live"
+  },
+  "recordings": {
+    "heading": "Recent recordings",
+    "rankSuffix": "{rank}+",
+    "higherRank": "Higher status",
+    "watch": "Watch"
+  },
+  "howItWorks": {
+    "heading": "How live sessions work",
+    "items": {
+      "rsvp": "RSVP and we'll email you 10 minutes before. Telegram too, if linked.",
+      "rooms": "Rooms run during London open and NY overlap. The host screen-shares the EZ Trade stack, narrates entries, and answers chat.",
+      "recordings": "Recordings land the next day. Transcripts follow a few hours later.",
+      "joinLink": "The live room unlocks 15 minutes before each session."
+    }
+  },
+  "row": {
+    "liveNow": "Live now",
+    "joinRoom": "Join live",
+    "watchStream": "Watch stream",
+    "waitingForHost": "Waiting for host",
+    "goLive": "Go live",
+    "going": "Going",
+    "rsvp": "RSVP",
+    "openEvent": "Details",
+    "opensSoon": "Opens soon",
+    "opensInMinutes_one": "Opens in {count} min",
+    "opensInMinutes_other": "Opens in {count} min",
+    "opensInHours_one": "Opens in {count} hour",
+    "opensInHours_other": "Opens in {count} hours",
+    "opensInDays_one": "Opens in {count} day",
+    "opensInDays_other": "Opens in {count} days",
+    "startsInMinutes_one": "Starts in {count} min",
+    "startsInMinutes_other": "Starts in {count} min",
+    "startsInHours_one": "Starts in {count} hour",
+    "startsInHours_other": "Starts in {count} hours",
+    "startsInDays_one": "Starts in {count} day",
+    "startsInDays_other": "Starts in {count} days"
+  },
+  "recurrence": {
+    "weekday": "Mon-Fri",
+    "daily": "Daily",
+    "weekly": "Weekly",
+    "fortnightly": "Fortnightly",
+    "monthly": "Monthly",
+    "onRequest": "On request",
+    "once": "Once",
+    "oneOff": "One-off",
+    "biweekly": "Fortnightly"
+  },
+  "badge": {
+    "recording": "RECORDING",
+    "liveNow": "LIVE NOW",
+    "upcoming": "UPCOMING"
+  },
+  "calendar": {
+    "previousMonth": "Previous month",
+    "nextMonth": "Next month",
+    "sessionCount_one": "{count} live session",
+    "sessionCount_other": "{count} live sessions",
+    "legend": "Days with a live session",
+    "days": {
+      "mon": "M",
+      "tue": "T",
+      "wed": "W",
+      "thu": "T",
+      "fri": "F",
+      "sat": "S",
+      "sun": "S"
+    }
+  },
+  "detail": {
+    "back": "All live sessions",
+    "hostedBy": "Hosted by {host}.",
+    "about": "About this session",
+    "recording": "Recording",
+    "watchRecording": "Watch the recording",
+    "transcript": "Transcript",
+    "when": "When",
+    "locked": "Unlocks at {rank}.",
+    "lockedFallbackRank": "a higher status",
+    "liveStream": "Live stream",
+    "watchLive": "Watch live",
+    "joinLive": "Join live",
+    "watchOnly": "Watch only - your camera and microphone stay off.",
+    "joiningStream": "Joining…",
+    "streamError": "Could not join the live stream.",
+    "rsvpReminder": "RSVP for reminder",
+    "going": "You're going",
+    "joinLinkPending": "Waiting for the host to start the stream.",
+    "details": "Details",
+    "host": "Host",
+    "topic": "Topic",
+    "rank": "Status",
+    "goingCount": "Going",
+    "cadence": "Cadence",
+    "defaultHost": "EZ Trade team",
+    "higherRank": "Higher status"
+  },
+  "today": "Today",
+  "rsvpd": "RSVP'd",
+  "locked": "Locked",
+  "details": "Details",
+  "meeting": {
+    "viewerLink": "Join link",
+    "hostLink": "Host link",
+    "openViewerLink": "Open join link",
+    "openHostLink": "Open host room"
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "welcome": {
+    "eyebrow": "EZ TRADE",
+    "headingNamed": "Welcome, {name}.",
+    "fallbackName": "there",
+    "intro": "Verify your TradeQuo trading account to unlock full access.",
+    "stepsTitle": "FOUR STEPS",
+    "step1": "Open or confirm your TradeQuo account",
+    "step2": "Submit your TradeQuo details",
+    "step3": "Connect MetaTrader securely",
+    "step4": "Open the journal",
+    "startVerification": "Start verification"
+  },
+  "instructions": {
+    "eyebrow": "STEP 1 · OPEN PU PRIME",
+    "heading": "Open your TradeQuo account",
+    "intro": "EZ Trade requires a TradeQuo account opened under our IB. Use the link below. It's pre-filled with the right code.",
+    "referredByName": "Referred by {name}.",
+    "referredByBody": "The link below opens a TradeQuo account under their sub-IB.",
+    "fallbackReferrerName": "your referrer",
+    "openAccount": "Open TradeQuo account",
+    "opensInNewTab": "Opens in a new tab",
+    "whatHappensNext": "What happens next",
+    "nextStep1": "Complete TradeQuo's signup and KYC. Standard documents. Passport, utility bill. Approval typically within a few hours on business days.",
+    "nextStep2": "Open at least one MT4 or MT5 account in the TradeQuo dashboard. Note your account number and server.",
+    "nextStep3": "Fund the account. $250+ reaches Bronze status.",
+    "nextStep4": "Come back, click the button below, and we'll match your account against our IB records.",
+    "openedMyAccount": "I've opened my account →",
+    "back": "← Back",
+    "transferTitle": "Already have a TradeQuo account but under a different IB?",
+    "transferBody": "You can transfer it.",
+    "transferLink": "See TradeQuo's transfer guide"
+  },
+  "brokerForm": {
+    "eyebrow": "Step 2 · Broker details",
+    "heading": "Connect your broker",
+    "intro": "Enter your details exactly as they appear in your broker portal. Mismatches delay verification.",
+    "brokerLabel": "Broker",
+    "openSignup": "Open {broker} signup →",
+    "uidLabel": "{broker} UID",
+    "uidLabelFallback": "Broker",
+    "uidHelp": "Found in your broker's IB portal.",
+    "accountEmail": "Account email",
+    "accountEmailHelp": "The email on your broker account.",
+    "mtPlatform": "MetaTrader platform",
+    "accountCurrency": "Account currency",
+    "mtServer": "MT server",
+    "mtServerHelp": "Exact string as shown in your MT4/5 login screen.",
+    "mtLogin": "Account number",
+    "mtLoginHelp": "The numeric login of your MT4/5 account.",
+    "mt5Password": "MT5 (read-only) password",
+    "mt5PasswordHelp": "The MT5 password is read-only. Not your trading password. EZ Trade cannot place trades with it.",
+    "telegramUsername": "Telegram username",
+    "telegramHelp": "Required. We add you to the trader chat group.",
+    "telegramPlaceholder": "@your_handle",
+    "agree": "I confirm these details belong to my account, opened under EZ Trade’s IB.",
+    "back": "Back",
+    "submit": "Submit & verify",
+    "submitting": "Submitting…",
+    "verifiedBroker": "Verified broker",
+    "uidShort": "UID",
+    "mtServerNamed": "{platform} server",
+    "password": "Password",
+    "serverPlaceholder": "Select your server",
+    "demoServerOption": "{server} (Demo)"
+  },
+  "verifying": {
+    "eyebrow": "VERIFICATION IN PROGRESS",
+    "headingSnag": "We hit a snag",
+    "headingChecking": "Checking your account…",
+    "intro": "We'll email you as soon as your account is verified.",
+    "stepSubmitted": "Details received",
+    "stepIb": "Confirming IB membership",
+    "stepMt": "Connecting MetaTrader",
+    "stepActive": "Activating access",
+    "inProgress": "in progress…",
+    "failedTitle": "Verification failed.",
+    "failedFallback": "Please re-check your details.",
+    "fixDetails": "← Fix details",
+    "leavePage": "You can leave this page. We'll email when verification completes.",
+    "submissionId": "Submission ID:"
+  },
+  "checklist": {
+    "title": "Get set up",
+    "eyebrow": "GETTING STARTED",
+    "progress": "{done} of {total} done",
+    "expand": "Show setup steps",
+    "collapse": "Hide setup steps",
+    "dismiss": "Dismiss",
+    "doneTitle": "You're all set.",
+    "doneBody": "Setup complete. The desk is yours.",
+    "tasks": {
+      "profile": {
+        "label": "Complete your profile",
+        "hint": "Add a display name or avatar."
+      },
+      "broker": {
+        "label": "Connect your broker",
+        "hint": "Link your trading account."
+      },
+      "lesson": {
+        "label": "Watch your first lesson",
+        "hint": "Start a course in the Academy."
+      },
+      "quiz": {
+        "label": "Take your first quiz",
+        "hint": "Test what you've learned."
+      }
+    }
+  },
+  "tour": {
+    "skip": "Skip",
+    "next": "Next",
+    "done": "Got it",
+    "stepCount": "{current} of {total}",
+    "nav": {
+      "title": "Your nav",
+      "body": "Learning and trading live here. Everything is one click away."
+    },
+    "scanner": {
+      "title": "The Scanner",
+      "body": "Scan the market for setups that fit your plan."
+    },
+    "academy": {
+      "title": "The Academy",
+      "body": "Lessons and quizzes that level you up as you go."
+    },
+    "streak": {
+      "title": "Your streak",
+      "body": "Show up daily. Build the habit. Earn the rewards."
+    }
+  },
+  "verify": {
+    "eyebrow": "STEP 1 OF 3 · BROKER VERIFICATION",
+    "title": "Verify your broker account",
+    "subtitle": "Choose your broker and confirm your details. We check that you are with one of our supported brokers before you connect a trading account.",
+    "brokerLabel": "Select your broker",
+    "emailLabel": "Email address",
+    "emailPlaceholder": "you@email.com",
+    "uidLabel": "Broker UID",
+    "uidHelp": "Your numeric account / IB ID from the broker. Numbers only.",
+    "uidPlaceholder": "e.g. 1234567",
+    "countryLabel": "Country",
+    "countryPlaceholder": "Select your country",
+    "next": "Next",
+    "verifying": "Verifying…",
+    "errors": {
+      "noBroker": "Please select a broker to continue."
+    },
+    "emailLabelNamed": "{broker} Email Address",
+    "uidLabelNamed": "{broker} UID"
+  }
+}

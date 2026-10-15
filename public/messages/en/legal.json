@@ -1,0 +1,139 @@
+{
+  "terms": {
+    "backHome": "← Home",
+    "title": "Terms of Service",
+    "lastUpdated": "Last updated · {date}",
+    "riskDisclosure": "Risk Disclosure",
+    "intro": {
+      "part1": "These Terms of Service (“Terms”) govern your access to and use of EZ Trade (the “Platform”, “we”, “us”). By creating an account, ticking the agreement box, or using the Platform you confirm that you have read, understood, and agree to be bound by these Terms and by our",
+      "part2": ". If you do not agree, do not use the Platform."
+    },
+    "sections": {
+      "0": {
+        "title": "1. What EZ Trade is - and is not",
+        "body": "EZ Trade is an educational membership platform for retail traders. We provide courses, market analysis, trade ideas, analytical tools, and community features. EZ Trade is not a broker, bank, exchange, fund, money manager, or licensed financial adviser, and does not hold, receive, or manage client money. We do not execute trades for you and have no ability to place trades on your account."
+      },
+      "1": {
+        "title": "2. Educational content only - never financial advice",
+        "body": "Everything on EZ Trade - courses, trade ideas, indicators, scanners, the ET Coach / AI output, analytics, and community discussion - is provided for general educational and informational purposes only. It is not investment, financial, legal, or tax advice, not a personal recommendation, and not a solicitation or offer to buy or sell any financial instrument. Nothing we publish takes account of your personal circumstances, objectives, or financial situation. You are solely responsible for every trading decision you make, and you should obtain independent professional advice before trading."
+      },
+      "2": {
+        "title": "3. Risk warning",
+        "part1": "Trading leveraged products (including FX, CFDs, indices, commodities, and crypto) carries a high level of risk and is not suitable for everyone. You can lose some or all of your capital, and with leverage you may lose more than your initial deposit. Past performance, back-tests, win rates, and hypothetical results are not reliable indicators of future results. Read our full",
+        "part2": " before depositing or trading."
+      },
+      "3": {
+        "title": "4. No guarantee of results",
+        "body": "We make no representation, warranty, or guarantee that any content, signal, idea, tool, or strategy will be profitable, accurate, complete, uninterrupted, or error-free, or that it will meet your expectations. Any reliance you place on the Platform is strictly at your own risk."
+      },
+      "4": {
+        "title": "5. Eligibility",
+        "body": "You must be at least 18 years old, have full legal capacity, and be legally permitted to trade leveraged products in your jurisdiction. You may not use the Platform if you are located in, or are a resident or national of, any country subject to applicable sanctions or where our services are restricted or unlawful. You are responsible for complying with all laws that apply to you."
+      },
+      "5": {
+        "title": "6. Broker relationship & how we are compensated",
+        "body": "Membership and member status are linked to a trading account you open and fund with a partner broker under EZ Trade's Introducing-Broker (IB) referral. We may receive introducing-broker commissions or rebates from the partner broker in connection with your account. This is a separate commercial relationship between you and the broker; the broker - not EZ Trade - provides execution, custody of funds, and is responsible for its own services and regulatory obligations. We are not liable for the acts, omissions, solvency, or conduct of any broker."
+      },
+      "6": {
+        "title": "7. Your account & security",
+        "part1": "Keep your sign-in credentials confidential and do not share your account. You are responsible for all activity that occurs under your account. Provide accurate information and keep it up to date. Where you provide a read-only (“MT5”) password to display account data, you confirm you are entitled to do so; we use it to read account data only and cannot place trades with it. Notify us immediately at",
+        "part2": "if you suspect unauthorised access."
+      },
+      "7": {
+        "title": "8. Acceptable use",
+        "body": "You agree not to: (a) copy, resell, redistribute, publish, or share Platform content, trade ideas, or tools outside your personal use; (b) scrape, reverse-engineer, or attempt to gain unauthorised access to the Platform or its data; (c) misuse, disrupt, or overload our systems; (d) use the Platform for unlawful, fraudulent, or abusive purposes; or (e) impersonate others or harass members in the community. We may remove content and restrict accounts that breach these rules."
+      },
+      "8": {
+        "title": "9. Intellectual property",
+        "body": "All Platform content, software, indicators, branding, and materials are owned by EZ Trade or its licensors and are protected by intellectual-property laws. We grant you a limited, personal, non-transferable, revocable licence to access the content for your own educational use while your membership is active. No other rights are granted."
+      },
+      "9": {
+        "title": "10. Third-party services",
+        "body": "The Platform integrates third-party services (for example brokers, account-sync providers, charting providers, and messaging platforms). We do not control and are not responsible for third-party services, their availability, accuracy, or their terms, which you use at your own risk and subject to their own agreements."
+      },
+      "10": {
+        "title": "11. Disclaimers",
+        "body": "The Platform and all content are provided “as is” and “as available” without warranties of any kind, express or implied - including fitness for a particular purpose, accuracy, and non-infringement - to the fullest extent permitted by law. We do not warrant that the Platform will be uninterrupted, timely, secure, or error-free, or that market data is accurate or current."
+      },
+      "11": {
+        "title": "12. Limitation of liability",
+        "body": "To the fullest extent permitted by law, EZ Trade, its owners, employees, and partners shall not be liable for any trading or investment losses, lost profits, lost opportunities, or any indirect, incidental, special, consequential, or punitive damages arising out of or relating to your use of the Platform - even if advised of the possibility. Where liability cannot be excluded, our total aggregate liability is limited to the amount (if any) you paid us for Platform access in the twelve (12) months before the event giving rise to the claim."
+      },
+      "12": {
+        "title": "13. Indemnification",
+        "body": "You agree to indemnify and hold harmless EZ Trade and its personnel from any claims, losses, liabilities, and expenses (including reasonable legal fees) arising from your use of the Platform, your trading activity, or your breach of these Terms."
+      },
+      "13": {
+        "title": "14. Termination",
+        "body": "We may suspend or terminate your access at any time if you breach these Terms, misuse the Platform, or if your partner-broker account is closed. You may stop using the Platform and close your account at any time. Sections that by their nature should survive termination (including disclaimers, limitation of liability, and indemnification) continue to apply."
+      },
+      "14": {
+        "title": "15. Governing law & disputes",
+        "body": "These Terms are governed by the laws of the jurisdiction in which EZ Trade's operating entity is established, without regard to its conflict-of-law rules, and the courts of that jurisdiction have exclusive jurisdiction over any dispute - unless mandatory consumer-protection law in your country of residence provides otherwise."
+      },
+      "15": {
+        "title": "16. Changes to these Terms",
+        "body": "We may update these Terms as the Platform evolves. Material changes will be notified by email or on the dashboard. Continued use after changes take effect means you accept the updated Terms."
+      }
+    },
+    "questions": "Questions about these Terms?"
+  },
+  "risk": {
+    "home": "← Home",
+    "title": "Risk Disclosure",
+    "lastUpdated": "Last updated · {date}",
+    "warningLead": "Trading is high risk.",
+    "warningBody1": " You can lose all of your invested capital, and in some leveraged products you can lose more than you initially deposited. Only trade with money you can afford to lose. EZ Trade is an educational platform and does ",
+    "warningNot": "not",
+    "warningBody2": " provide financial advice.",
+    "sections": {
+      "0": {
+        "title": "What you are actually doing",
+        "bodyPre": "Trading FX, CFDs, indices, commodities, and crypto means opening leveraged positions on instruments whose prices move in unpredictable ways. Leverage amplifies both gains ",
+        "bodyEm": "and",
+        "bodyPost": " losses - a small adverse move can wipe out a significant portion, or all, of your account, and you may be required to deposit further funds."
+      },
+      "1": {
+        "title": "No advice & no guarantees",
+        "bodyPre": "No indicator, scanner, AI tool, trade idea, course, or discussion on EZ Trade is financial advice or a personal recommendation, and none guarantees a profitable outcome. Win rates, back-tests, historical and hypothetical performance describe past or simulated behaviour only - they are ",
+        "bodyStrong": "not",
+        "bodyPost": " promises about the future. Every trade you place is your own decision and your own responsibility."
+      },
+      "2": {
+        "title": "Educational use only",
+        "bodyPre": "The Academy, trade idea streams, journal, scanner, ET Coach, and community are",
+        "bodyStrong": " educational",
+        "bodyPost": ". They are designed to help you build skill, not to be followed blindly. Do not place trades you do not fully understand."
+      },
+      "3": {
+        "title": "Market, liquidity & execution risk",
+        "body": "Markets can gap, move sharply, or become illiquid, especially around news, weekends, and low-volume periods. Your orders may be filled at prices materially different from those you expected (“slippage”), and stop-losses do not guarantee execution at the requested level."
+      },
+      "4": {
+        "title": "Broker & counterparty risk",
+        "body": "Your funds are held by, and your trades are executed by, a third-party broker - not EZ Trade. You are exposed to that broker’s solvency, terms, spreads, fees, and conduct. EZ Trade does not hold client money and is not responsible for any broker’s acts, omissions, or failure."
+      },
+      "5": {
+        "title": "Technology & data risk",
+        "body": "Prices, charts, and analytics shown on the Platform may be delayed, inaccurate, or temporarily unavailable, and the Platform may experience outages. Do not rely on Platform data as your sole source for any trading decision."
+      },
+      "6": {
+        "title": "No suitability assessment",
+        "body": "EZ Trade does not assess whether trading, or any particular instrument or strategy, is suitable or appropriate for you. We do not know your financial situation, experience, or objectives, and nothing we provide is tailored to them."
+      },
+      "7": {
+        "title": "Tax & regulation",
+        "body": "You are responsible for understanding and meeting the tax, legal, and regulatory implications of trading in your country. EZ Trade does not provide tax, legal, or financial advice."
+      },
+      "8": {
+        "title": "Seek independent advice",
+        "bodyPre": "If you are unsure whether trading is suitable for you, seek advice from a licensed financial adviser in your jurisdiction ",
+        "bodyEm": "before",
+        "bodyPost": " depositing capital or placing any trades."
+      }
+    },
+    "acceptancePre": "By using EZ Trade you confirm that you have read, understood, and accept this Risk Disclosure and our ",
+    "termsLink": "Terms of Service",
+    "acceptancePost": "."
+  }
+}

@@ -1,0 +1,345 @@
+{
+  "hero": {
+    "eyebrow": "Closed beta · launching 10 May 2026",
+    "headlinePart1": "The",
+    "headlineHighlight": "terminal",
+    "headlinePart2": "you wish",
+    "headlinePart3": "your broker built.",
+    "subheadline": "Live signals, native indicators, an AI coach that reads your trades, and a tier ladder you climb by funding a real account. not by paying us a subscription.",
+    "ctaPrimary": "Get early access",
+    "ctaSecondary": "See the chart",
+    "reassurance": "Free to sign up · No card required · Tier upgrades via funded broker account"
+  },
+  "landing": {
+    "logoAlt": "EZ Trade",
+    "heroTitle": "FOLLOW THESE 3 SIMPLE STEPS",
+    "heroSubtitle": "TO GET STARTED",
+    "heroDescription": "A modern, free ecosystem for traders who want real education, real tools, and a real community - not hype.",
+    "steps": {
+      "0": {
+        "badge": "STEP 1",
+        "title": "BROKER SIGN UP",
+        "description1": "Register your trading account with TradeQuo using your referral's link.",
+        "description2": "If you don't have a link, contact the person who referred you to get one.",
+        "description3": "Once you have your referral link, follow this video guide to complete your registration:"
+      },
+      "1": {
+        "badge": "STEP 2",
+        "title": "ACCESS FORM",
+        "description1": "Fill out the EZ Trade Access Form so we can verify your account and activate your access.",
+        "description2": "After you fill the form, request to join the group with the link that shows up.",
+        "cta": "Fill Access Form"
+      },
+      "2": {
+        "badge": "STEP 3",
+        "title": "FINAL ACTIVATION",
+        "description1": "Once you've completed the form, message our support on Telegram with your TradeQuo User ID.",
+        "cta": "Contact @ptverify"
+      }
+    },
+    "videoFallback": "Your browser does not support the video tag.",
+    "finalTitle": "That's It! You're Now Ready to Level Up Your Trading with EZ Trade.",
+    "finalDescription": "If everything has been done correctly, you will get access within 24 hours or support will be in touch.",
+    "legalTerms": "Terms",
+    "legalRisk": "Risk Disclosure",
+    "legalPrivacy": "Privacy"
+  },
+  "tierLadder": {
+    "eyebrow": "04 / Tier ladder",
+    "headingHighlight": "Earn",
+    "headingLine1Rest": "access.",
+    "headingLine2": "Don't pay for it.",
+    "intro": "Sign up free. Climb the tiers by funding a real broker account under our IB attribution. We earn rebates from the broker. you get the platform without a subscription bill.",
+    "tierLabel": "Tier {tier}",
+    "free": "Free",
+    "funded": "${amount}+ funded",
+    "footnote": "Tier thresholds vary by country · withdraw any time · no lock-up",
+    "tiers": {
+      "0": {
+        "name": "Unverified",
+        "unlocks": "Sign up + community read"
+      },
+      "1": {
+        "name": "Beginner",
+        "unlocks": "Academy, signals, live sessions, EZ Trade group"
+      },
+      "2": {
+        "name": "Starter",
+        "unlocks": "+ Trade Journal + Cypher Scanner"
+      },
+      "3": {
+        "name": "Bronze",
+        "unlocks": "Full member access"
+      },
+      "4": {
+        "name": "Silver",
+        "unlocks": "+ Synergy group"
+      },
+      "5": {
+        "name": "Gold",
+        "unlocks": "+ AI Coach"
+      },
+      "6": {
+        "name": "Platinum",
+        "unlocks": "Priority access + perks"
+      },
+      "7": {
+        "name": "VIP",
+        "unlocks": "Top-tier perks"
+      }
+    }
+  },
+  "signals": {
+    "eyebrow": "02 / Live signals",
+    "headingLine1": "Four streams.",
+    "headingLine2": "Four personalities.",
+    "headingLine3": "One inbox.",
+    "intro": "Posted live by our analysts in Telegram. Mirrored to your platform inbox the second they hit, parsed into structured entries, AI-scored for confidence, and ready to paste into your MT5 ticket.",
+    "streams": {
+      "0": {
+        "name": "Synergy",
+        "tagline": "Multi-confluence flagship",
+        "desc": "Our highest-conviction stream. Only fires when 4+ rules align across timeframes."
+      },
+      "1": {
+        "name": "PulseX",
+        "tagline": "Short-term scalper",
+        "desc": "Tight stops, fast targets. M5 / M15 setups for active traders during London + NY sessions."
+      },
+      "2": {
+        "name": "Nova",
+        "tagline": "Swing & position",
+        "desc": "Daily / 4H setups for traders who can't watch the screen all day. Hold for days, not minutes."
+      },
+      "3": {
+        "name": "Zen",
+        "tagline": "Minimal high-conviction",
+        "desc": "One or two signals a day, max. Curated by senior analysts when the chart is screaming at us."
+      }
+    },
+    "sampleLive": "Live · 3 min ago",
+    "sampleStreamTag": "⚡ SYNERGY",
+    "sampleSymbol": "XAU/USD",
+    "sampleSide": "BUY",
+    "sampleAiLabel": "AI",
+    "sampleAiScore": "87%",
+    "sampleMeta": "Synergy · educational",
+    "chipEntry": "Entry",
+    "chipSl": "SL",
+    "chipTp1": "TP1",
+    "chipTp2": "TP2",
+    "chipTp3": "TP3",
+    "disclaimer": "Educational only. Every signal includes the analyst's reasoning. You decide whether to act and you size the trade yourself."
+  },
+  "tools": {
+    "eyebrow": "03 / Tools",
+    "headingLine1": "Eight tools.",
+    "headingLine2": "One platform.",
+    "headingLine3": "Zero plugins.",
+    "subheading": "Stop juggling 12 tabs. Everything you need to find, take, journal, and review a trade lives at the same URL. and unlocks as you climb the tiers.",
+    "items": {
+      "0": {
+        "title": "EZ Trade Scanner",
+        "desc": "Native chart engine with our All-In-One indicator stack and C Trigger oscillator. Drag panels, fullscreen, jump symbols with ⌘K.",
+        "tag": "Tier 3+"
+      },
+      "1": {
+        "title": "Trade Journal",
+        "desc": "Auto-imports trades from your MT5. ET Score, Sharpe, equity curve, AI coach.",
+        "tag": "Tier 1+"
+      },
+      "2": {
+        "title": "ET Coach",
+        "desc": "Reads your last 50 trades and tells you exactly where you bleed equity.",
+        "tag": "Tier 1+"
+      },
+      "3": {
+        "title": "Academy",
+        "desc": "Course paths from beginner to senior. Quizzes, XP, completion tracking.",
+        "tag": "Tier 1+"
+      },
+      "4": {
+        "title": "Community",
+        "desc": "Curated channels, no shilling. Tier-gated access keeps the floor clean.",
+        "tag": "Tier 1+"
+      },
+      "5": {
+        "title": "Live sessions",
+        "desc": "Senior analysts on Zoom. open chart, narrate the setup, take questions.",
+        "tag": "Tier 2+"
+      },
+      "6": {
+        "title": "Analytics",
+        "desc": "Aggregated performance, signal hit-rate, drawdown patterns. Honest numbers.",
+        "tag": "Tier 2+"
+      },
+      "7": {
+        "title": "Rewards & XP",
+        "desc": "Climb tiers via funded broker volume. Win Rolexes, MacBooks, funded accounts.",
+        "tag": "Tier 0+"
+      }
+    }
+  },
+  "rewards": {
+    "eyebrow": "05 / Rewards & XP",
+    "heading": "Trade like it",
+    "headingHighlight": "matters.",
+    "description": "XP for everything that signals progress: completing courses, journaling trades, hitting tier milestones. Cash it in for prizes that actually matter. funded accounts, watches, retreats, merch.",
+    "throwConfetti": "Throw confetti",
+    "funNote": "(just so you know we make this stuff fun)",
+    "badgesToCollect": "Badges to collect",
+    "prizes": {
+      "0": {
+        "title": "Rolex Submariner",
+        "xp": "Inner Circle raffle"
+      },
+      "1": {
+        "title": "MacBook Pro M-series",
+        "xp": "75,000 XP"
+      },
+      "2": {
+        "title": "iPhone 17 Pro",
+        "xp": "30,000 XP"
+      },
+      "3": {
+        "title": "Funded $100k account",
+        "xp": "120,000 XP"
+      },
+      "4": {
+        "title": "Trader retreat (Bali)",
+        "xp": "Top-10 quarterly"
+      },
+      "5": {
+        "title": "EZ Trade merch drop",
+        "xp": "5,000 XP"
+      }
+    },
+    "badges": {
+      "0": {
+        "name": "Verified"
+      },
+      "1": {
+        "name": "Funded"
+      },
+      "2": {
+        "name": "Journaler"
+      },
+      "3": {
+        "name": "Scholar"
+      },
+      "4": {
+        "name": "Voice"
+      },
+      "5": {
+        "name": "Champion"
+      },
+      "6": {
+        "name": "Streak 30"
+      }
+    }
+  },
+  "chartShowcase": {
+    "eyebrow": "01 / The chart",
+    "headingLine1": "Six years of Pine,",
+    "headingLine2": "rendered as art.",
+    "description": "We don't show you a stock-photo chart. We show you the indicator stack itself. VIDYA, CMO, ATR, RSI, Bollinger, Fibonacci. Alive on the page, the same engine you'll find inside the platform.",
+    "features": {
+      "0": {
+        "title": "All-In-One indicator",
+        "desc": "Reversal Bands, MA Cloud, VIDYA stack, SuperTrend, HalfTrend, Ichimoku, SAR, EMA 200. rendered natively, no plugins."
+      },
+      "1": {
+        "title": "C Trigger oscillator",
+        "desc": "Double-smoothed RSI snake with volatility bands, fish hooks, and divergence detection on every pivot."
+      },
+      "2": {
+        "title": "Confluence Scorecard",
+        "desc": "B / S badges fire on the first bar all four rules align. never miss a high-probability setup."
+      },
+      "3": {
+        "title": "Break Arrows",
+        "desc": "Volume-confirmed trend flips with the % above average so you size with conviction."
+      }
+    }
+  },
+  "finalCta": {
+    "eyebrow": "06 / Get on",
+    "headingPrefix": "Trade with",
+    "headingHighlight": "edge.",
+    "headingLine2": "Climb to the top.",
+    "subheading": "Join the closed beta. Skip the line. Be on the platform the moment we open the gates.",
+    "primaryCta": "Get early access",
+    "secondaryCta": "I already have an account",
+    "footnote": "Free to register · Tier 0 forever · upgrade by funding a real account"
+  },
+  "footer": {
+    "colProductTitle": "Product",
+    "linkScanner": "Scanner",
+    "linkSignals": "Signals",
+    "linkTools": "Tools",
+    "linkTierLadder": "Tier ladder",
+    "linkRewards": "Rewards",
+    "colCompanyTitle": "Company",
+    "linkAbout": "About",
+    "linkPress": "Press",
+    "linkContact": "Contact",
+    "colLegalTitle": "Legal",
+    "linkRiskDisclosure": "Risk disclosure",
+    "linkTerms": "Terms",
+    "linkPrivacy": "Privacy",
+    "brandDescription": "The terminal-grade trading platform. Live signals, native indicators, AI coach, and a tier ladder you climb by trading, not by paying us a subscription.",
+    "disclaimer": "Educational only · Not financial advice",
+    "copyright": "© {year} EZ Trade. All rights reserved.",
+    "riskWarning": "Trading FX, CFDs, and crypto involves risk. You can lose more than you deposit. We don't manage your money. We don't take profit shares. We share educational ideas. You decide."
+  },
+  "header": {
+    "nav": {
+      "chart": "The chart",
+      "signals": "Signals",
+      "tools": "Tools",
+      "tiers": "Tiers",
+      "rewards": "Rewards"
+    },
+    "brand": "EZ Trade",
+    "signIn": "Sign in",
+    "getAccess": "Get access",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "eyebrow": "EZ TRADE",
+    "menu": "Menu",
+    "theme": "Theme",
+    "light": "Light",
+    "dark": "Dark"
+  },
+  "stats": {
+    "items": {
+      "0": {
+        "label": "Signals last 30 days"
+      },
+      "1": {
+        "label": "Streams, four flavours"
+      },
+      "2": {
+        "label": "Median AI confidence"
+      },
+      "3": {
+        "label": "Calls/min · live data"
+      }
+    }
+  },
+  "press": {
+    "badge": "Press · Media · Partnerships",
+    "heroTitlePrefix": "Get in",
+    "heroTitleHighlight": "touch.",
+    "heroSubtitle": "Press enquiries, partnership pitches, broker introductions, anything else. one inbox, replies within 24 hours.",
+    "contactLabel": "Press contact",
+    "contactDescription": "For coverage, interviews, embargoed launches, founder quotes, custom statistics, or product walkthroughs.",
+    "sendEmail": "Send email",
+    "replyTime": "Reply within 24 hours · founder is on most threads",
+    "languages": "English · global time zones",
+    "otherInboxesTitle": "Or reach the right inbox",
+    "inboxGeneral": "General",
+    "inboxPartnerships": "Partnerships",
+    "inboxSupport": "Support"
+  }
+}

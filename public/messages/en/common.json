@@ -1,0 +1,108 @@
+{
+  "actions": {
+    "signOut": "Sign out",
+    "collapse": "Collapse"
+  },
+  "sidebar": {
+    "expandSidebar": "Expand sidebar",
+    "collapseSidebar": "Collapse sidebar",
+    "completeOnboardingToUnlock": "Complete onboarding to unlock",
+    "reachRankToUnlock": "Reach {rank} to unlock",
+    "aHigherRank": "a higher status",
+    "locked": "Locked",
+    "inactiveLocked": "Reactivate your account to unlock",
+    "lockedTooltip": "{label}. {tooltip}"
+  },
+  "bugReport": {
+    "button": "Report a bug",
+    "title": "Report a bug",
+    "subtitle": "Tell us what broke - we usually reply within 24 hours.",
+    "close": "Close",
+    "fieldTitle": "Title",
+    "fieldTitlePlaceholder": "Short summary of the issue",
+    "fieldDescription": "Description",
+    "fieldDescriptionPlaceholder": "What happened? What did you expect? Steps to reproduce help a lot.",
+    "fieldImage": "Screenshot",
+    "fieldImageHelp": "Optional - PNG, JPG, WEBP or GIF, up to 5 MB.",
+    "uploadImage": "Add screenshot",
+    "removeImage": "Remove screenshot",
+    "cancel": "Cancel",
+    "submit": "Send report",
+    "submitting": "Sending…",
+    "successToast": "Bug report sent - thanks for helping us improve.",
+    "submitFailed": "Could not send your report. Try again.",
+    "notSignedIn": "Sign in again to send a bug report.",
+    "titleTooShort": "Title must be at least 3 characters.",
+    "descriptionTooShort": "Description must be at least 10 characters.",
+    "imageTypeError": "Use a PNG, JPG, WEBP or GIF image.",
+    "imageSizeError": "Image must be 5 MB or smaller."
+  },
+  "topBar": {
+    "accountMenu": "Account menu",
+    "account": "Account",
+    "brokerConnection": "Broker connection",
+    "language": "Language",
+    "backToAccountMenu": "Back to account menu",
+    "preview": "Preview",
+    "statusTier": "{status} · {tier}",
+    "streakTitle_one": "{count} day streak",
+    "streakTitle_other": "{count} day streak",
+    "badgesTitle_one": "{count} badge won",
+    "badgesTitle_other": "{count} badges won"
+  },
+  "themeToggle": {
+    "switchToLight": "Switch to light mode",
+    "switchToDark": "Switch to dark mode"
+  },
+  "passwordInput": {
+    "show": "Show password",
+    "hide": "Hide password"
+  },
+  "rank": {
+    "higherRank": "Higher status",
+    "member": "Member"
+  },
+  "nextBestAction": {
+    "eyebrow": "Next best action"
+  },
+  "accountRank": {
+    "yourRank": "Your status",
+    "previewRank": "Preview",
+    "nextRank": "Next status: {rank}",
+    "balanceToAdd": "Balance to add",
+    "topRankReached": "Top status reached",
+    "lastTrade": "Last trade",
+    "lastSync": "Last sync",
+    "justNow": "just now",
+    "minutesAgo": "{count}m ago",
+    "hoursAgo": "{count}h ago",
+    "daysAgo": "{count}d ago",
+    "none": "-"
+  },
+  "status": {
+    "active": "Active",
+    "inactive": "Inactive",
+    "verified": "Verified",
+    "gracePeriod": "Grace period",
+    "pending": "Pending",
+    "preview": "Preview"
+  },
+  "activityChart": {
+    "empty": "Activity chart appears once you have at least 2 days of data in this range.",
+    "title": "Daily activity",
+    "days": "{count} days",
+    "signups": "{count} signups",
+    "deposits": "${amount} in"
+  },
+  "whyThisMatters": "Why this matters",
+  "keyConcepts": "Key concepts",
+  "realWorldSnapshot": "Real-world snapshot",
+  "takeaway": "Takeaway",
+  "errors": {
+    "staleChunkTitle": "Updating to the latest version",
+    "staleChunkBody": "A new version of EZ Trade was deployed while this tab was open. Refresh to load the latest files.",
+    "genericTitle": "Something went wrong",
+    "genericBody": "This page hit an unexpected error. Try refreshing - if it keeps happening, sign in again.",
+    "refresh": "Refresh page"
+  }
+}

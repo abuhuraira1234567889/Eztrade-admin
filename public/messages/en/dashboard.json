@@ -1,0 +1,188 @@
+{
+  "subtitle": "Trade your edge.",
+  "header": {
+    "badge": "DASHBOARD",
+    "welcomeBackNamed": "Welcome back, {name}.",
+    "welcomeBack": "Welcome back."
+  },
+  "inactiveBanner": {
+    "title": "Your access is limited.",
+    "body": "Place a qualifying trade to reactivate. You have 14 days to keep your XP, badges, and status.",
+    "cta": "Refresh status →"
+  },
+  "nba": {
+    "eyebrowPrimary": "Next best action",
+    "eyebrowSecondary": "Also worth doing",
+    "reactivate": {
+      "label": "Reactivate your account",
+      "description": "Place a qualifying trade or top up your balance."
+    },
+    "qualifyingTrade": {
+      "label": "Place a qualifying trade",
+      "description_one": "{count} day until you go inactive.",
+      "description_other": "{count} days until you go inactive."
+    },
+    "journal": {
+      "label": "Journal this week's trades",
+      "description": "Add notes and a screenshot. Earn XP."
+    },
+    "continueCourse": {
+      "label": "Continue your course",
+      "description": "Earn XP for every lesson finished."
+    },
+    "openScanner": {
+      "label": "Open the chart scanner",
+      "description": "Run the full Cypher stack on any symbol."
+    },
+    "referFriend": {
+      "label": "Refer a friend",
+      "description": "500 XP each."
+    },
+    "verification": {
+      "label": "Complete verification",
+      "description": "Connect TradeQuo and MetaTrader to unlock the platform."
+    },
+    "connectTelegram": {
+      "label": "Join the EZ Trade group",
+      "description": "Unlock the private Telegram group once your balance reaches $250."
+    }
+  },
+  "shortcuts": {
+    "marketInsights": {
+      "label": "Market Insights",
+      "detailSignal": "{instrument} {direction}",
+      "detailEmpty": "No live calls"
+    },
+    "academy": {
+      "label": "Academy",
+      "detail_zero": "Not started",
+      "detail_one": "{count} started",
+      "detail_other": "{count} started"
+    },
+    "journal": {
+      "label": "Journal",
+      "detail_zero": "No trades",
+      "detail_one": "{count} trade",
+      "detail_other": "{count} trades"
+    },
+    "referrals": {
+      "label": "Referrals",
+      "detail_zero": "None qualified",
+      "detail_one": "{count} qualified",
+      "detail_other": "{count} qualified"
+    },
+    "competition": {
+      "label": "Competition",
+      "detailOffSeason": "Off-season"
+    },
+    "scanner": {
+      "label": "Scanner",
+      "detail": "Live chart scan"
+    },
+    "locked": "Locked"
+  },
+  "footer": {
+    "newHerePrefix": "New here? Start with",
+    "academyLink": "the Academy",
+    "or": "or open the",
+    "helpLink": "help centre"
+  },
+  "accountRank": {
+    "summitEyebrow": "Highest status reached.",
+    "summitMessage": "Top of the ladder. The view's good. Now keep proving it.",
+    "noTrades": "No trades yet",
+    "totalXp": "Total XP",
+    "vol30d": "30 day vol",
+    "lots": "{count} lots",
+    "lotsRequired": " / {count} lots",
+    "balanceRequired": " / {amount}",
+    "requiredVolume": "Required Volume",
+    "requiredBalance": "Required Balance",
+    "balance": "Balance",
+    "equity": "Equity",
+    "connectMt": "Connect MetaTrader",
+    "connectBroker": "Connect Broker",
+    "manageBroker": "Manage Broker",
+    "vol30dTooltip": {
+      "beginner": "Closed lots on Gold and FX pairs over the last 30 days. You need 1 lot at Beginner and Starter, or 2 lots from Bronze upward, to keep active access.",
+      "developing": "Closed lots on Gold and FX pairs over the last 30 days. You need 1 lot at Starter, or 2 lots from Bronze upward, to keep active access.",
+      "developed": "Closed lots on Gold and FX pairs over the last 30 days. You need 2 lots over 30 days to keep active access."
+    },
+    "balanceTooltip": {
+      "beginner": "Your country sets your starting rank at Beginner, so the minimum balance for active access is $50. A higher figure here is the balance needed for your next status.",
+      "developing": "Your country sets your starting rank at Starter, so the minimum balance for active access is $150. A higher figure here is the balance needed for your next status.",
+      "developed": "Your country sets your starting rank at Bronze, so the minimum balance for active access is $250. A higher figure here is the balance needed for your next status."
+    },
+    "reSyncButton": "Re-Sync",
+    "reSyncInProgress": "Syncing…",
+    "reSyncTooltip": "Re-sync broker & trade data",
+    "reSyncCooldown": "Re-sync available in {time}",
+    "reSyncSuccess": "Synced - {count} new trades",
+    "reSyncAvailableSoon": "Re-sync available in 1 hour"
+  },
+  "liveSessions": {
+    "title": "Live sessions",
+    "viewAll": "View schedule",
+    "nextUp": "Next up:"
+  },
+  "widgets": {
+    "tradingSessions": "Trading sessions",
+    "marketClock": "Market clock",
+    "volume": {
+      "label": "Typical volume",
+      "low": "Low",
+      "medium": "Medium",
+      "high": "High"
+    },
+    "sessionOpen": "{city} open",
+    "sessionClosed": "{city} closed",
+    "overlapNote": "{cities} open",
+    "latestSignals": "Latest calls",
+    "viewAll": "View all",
+    "noSignals": "No calls yet.",
+    "signalTable": {
+      "instrument": "Instrument",
+      "entry": "Entry",
+      "status": "Status",
+      "time": "Time"
+    },
+    "signalStatus": {
+      "open": "Open",
+      "tpHit": "TP hit",
+      "slHit": "SL hit",
+      "closed": "Closed"
+    },
+    "relativeTime": {
+      "justNow": "just now",
+      "minutesAgo": "{count}m ago",
+      "hoursAgo": "{count}h ago",
+      "daysAgo": "{count}d ago",
+      "none": "-"
+    },
+    "equityCurve": {
+      "title": "Cumulative P&L",
+      "summary": "{count} closed trades · {start} – {end}",
+      "peakDrawdown": "Peak drawdown {amount}",
+      "empty": "Your equity curve appears after 2 closed trades.",
+      "tradeNumber": "Trade #{number}"
+    }
+  },
+  "grace": {
+    "eyebrow": "Grace period",
+    "title": "Keep your access",
+    "body": "Trade at least {lots} lots this calendar month to stay active. Otherwise your platform and Telegram group access is removed when the timer runs out.",
+    "locksIn": "Access locks in",
+    "expiring": "Locking soon",
+    "cta": "Go to your trades",
+    "units": {
+      "days": "days",
+      "hours": "hrs",
+      "minutes": "min"
+    }
+  },
+  "announcements": {
+    "title": "Latest announcements",
+    "viewAll": "View all",
+    "untitled": "Announcement"
+  }
+}

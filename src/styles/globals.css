@@ -1,0 +1,803 @@
+/* Clash Display via Fontshare CDN (https URLs - protocol-relative breaks in Vite).
+   Urbanist + JetBrains via @fontsource imports in main.tsx. */
+@font-face {
+  font-family: "Clash Display";
+  src: url("https://cdn.fontshare.com/wf/2GQIT54GKQY3JRFTSHS4ARTRNRQISSAA/3CIP5EBHRRHE5FVQU3VFROPUERNDSTDF/JTSL5QESUXATU47LCPUNHZQBDDIWDOSW.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Clash Display";
+  src: url("https://cdn.fontshare.com/wf/FPDAZ2S6SW4QMSRIIKNNGTPM6VIXYMKO/5HNPQ453FRLIQWV2FNOBUU3FKTDZQVSG/Z3MGHFHX6DCTLQ55LJYRJ5MDCZPMFZU6.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Clash Display";
+  src: url("https://cdn.fontshare.com/wf/BFBSY7LX5W2U2EROCLVVTQP4VS7S4PC3/IIUX4FGTMD2LK2VWD3RVTAS4SSMUN7B5/53RZKGODFYDW3QHTIL7IPOWTBCSUEZK7.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================================
+   EZTRADE PLATFORM - DESIGN SYSTEM
+   Source of truth: ~/Documents/eztrade-app/src/styles/global.css
+   Brand DNA: ~/Documents/Brands/Eztrade/
+   See docs/superpowers/specs/2026-05-13-platform-ui-overhaul-design.md
+   ============================================================================
+   Hard rules:
+   - Purple is for moments, never section background. Use the ramp for tints.
+   - Slate = type. Ink/bone = surface. Don't cross-use.
+   - Signal colors = data only. Never tint a button purple-green, never use red
+     for branding.
+   - Logo gradient is canonical: linear-gradient(135deg, #9236DA, #0B05D7).
+   - Em-dashes - yes. Brand voice uses them for mid-sentence pivots. (Old rule
+     reversed 17 May per brand profile sync.)
+   - JetBrains Mono is for trader furniture only (prices, R-multiples,
+     timestamps, trade rows). Never for eyebrows or generic UI.
+   ========================================================================== */
+
+/* ============================================================================
+   1 · TOKENS (mode-invariant)
+   Ported from eztrade-app/src/styles/global.css @theme block.
+   ========================================================================== */
+
+:root {
+  /* Color: Purple primary ramp */
+  --color-purple-50:  #F8F3FE;
+  --color-purple-100: #EFE3FD;
+  --color-purple-200: #DEC7FB;
+  --color-purple-300: #C9A2F8;
+  --color-purple-400: #B27DF4;
+  --color-purple-500: #A855F7;
+  --color-purple:     #9236DA;
+  --color-purple-700: #7322B5;
+  --color-purple-800: #5B1F9C;
+  --color-purple-950: #1F0938;
+  --color-indigo-mark: #0B05D7;
+
+  /* Color: Dark surface (ink) */
+  --color-ink-950: #0A0A0A;
+  --color-ink-900: #14141E;
+  --color-ink-800: #18181B;
+  --color-ink-700: #27272A;
+  --color-ink-600: #3F3F46;
+
+  /* Color: Light surface (bone) */
+  --color-bone-50:  #FAFAFE;
+  --color-bone-100: #F7F7FB;
+  --color-bone-200: #F0F0F5;
+  --color-bone-300: #DDDDE5;
+
+  /* Color: Text (slate cool-grey ramp) */
+  --color-slate-300: #A3B5D6;
+  --color-slate-500: #64748D;
+  --color-slate-700: #3C4F69;
+  --color-slate-900: #1A2C44;
+
+  /* Color: Mode-invariant signal */
+  --color-signal-long:  #22C55E;
+  --color-signal-short: #EF4444;
+  --color-signal-warn:  #F59E0B;
+  --color-signal-info:  #3B82F6;
+
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+
+  /* RGB triplets of the mode-invariant brand + signal colours so Tailwind can
+   * apply opacity modifiers (bg-purple/10, border-red/30…). Keep in sync with
+   * the hex values above. */
+  --color-purple-rgb:       146 54 218;
+  --color-signal-long-rgb:  34 197 94;
+  --color-signal-short-rgb: 239 68 68;
+  --color-signal-warn-rgb:  245 158 11;
+  --color-signal-info-rgb:  59 130 246;
+
+  /* Typography */
+  --font-display: "Clash Display", "Inter Display", system-ui, sans-serif;
+  --font-body:    "Urbanist Variable", "Urbanist", "Inter", system-ui, sans-serif;
+  /* 18 May (AJ): JetBrains Mono dropped from UI chrome - the variable now
+   * points at Urbanist so any inline-style `font-family: var(--font-mono)`
+   * picks up the body font automatically. Use `--font-code` for real code
+   * blocks (added below). */
+  --font-mono:    "Urbanist Variable", "Urbanist", ui-sans-serif, system-ui, sans-serif;
+  --font-code:    "JetBrains Mono Variable", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* Radii */
+  --radius-sm:  4px;
+  --radius-md:  8px;
+  --radius-lg:  12px;
+  --radius-xl:  16px;
+  --radius-2xl: 20px;
+  --radius-3xl: 24px;
+
+  /* Shadows */
+  --shadow-elev-sm: 0 1px 2px rgba(10, 10, 10, 0.04), 0 1px 1px rgba(10, 10, 10, 0.06);
+  --shadow-elev-md: 0 4px 12px rgba(10, 10, 10, 0.06), 0 2px 4px rgba(10, 10, 10, 0.04);
+  --shadow-elev-lg: 0 16px 32px rgba(50, 50, 93, 0.08), 0 8px 16px rgba(10, 10, 10, 0.06);
+  --shadow-glow-purple:        0 10px 15px -3px rgba(146, 54, 218, 0.20), 0 4px 6px -4px rgba(146, 54, 218, 0.10);
+  --shadow-glow-purple-strong: 0 4px 20px rgba(146, 54, 218, 0.40), 0 0 40px rgba(146, 54, 218, 0.15);
+
+  /* Motion - Stripe-style easings */
+  --ease-transform: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-color:     cubic-bezier(0.25, 1, 0.5, 1);
+  --ease-default:   cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-emphasize: cubic-bezier(0.33, 1, 0.68, 1);
+  --duration-instant: 80ms;
+  --duration-fast:    150ms;
+  --duration-base:    250ms;
+  --duration-slow:    400ms;
+  --duration-section: 600ms;
+
+  /* Sidebar width - synced at runtime by Sidebar/AdminSidebar collapse toggle. */
+  --sidebar-w: 256px;
+}
+
+/* ============================================================================
+   2 · SEMANTIC TOKENS (mode-adaptive, swap via [data-theme])
+   ========================================================================== */
+
+:root,
+[data-theme="light"] {
+  --bg-page:        var(--color-bone-50);
+  --bg-surface:     var(--color-bone-100);
+  --bg-surface-soft: var(--color-bone-200);
+  --bg-elevated:    var(--color-bone-200);
+  --shimmer-sweep:  rgba(255, 255, 255, 0.6);
+  --border:         var(--color-bone-300);
+  --border-subtle:  rgba(10, 10, 10, 0.08);
+  --border-strong:  rgba(10, 10, 10, 0.16);
+
+  --text-primary:   var(--color-slate-900);
+  --text-strong:    var(--color-slate-900);
+  --logo-wordmark:  var(--color-slate-900);
+  --text-default:   var(--color-slate-700);
+  --text-secondary: var(--color-slate-700);
+  --text-muted:     var(--color-slate-500);
+  --text-disabled:  var(--color-slate-300);
+
+  /* 18 May v3 (AJ): every `*-dim` var pulled away from rgba washes - they
+   * now resolve to the neutral elevated surface. The colour identity
+   * survives via the `box-shadow: inset 2px 0 0 var(--colour)` left rail
+   * on the matching `.bg-*-dim` utility classes. Inline-style consumers
+   * (`background: var(--color-purple-dim)`) silently become solid neutral. */
+  --color-purple-dim: var(--bg-elevated);
+  --bg-purple-dim:    var(--bg-elevated);
+  --signal-red:       var(--color-signal-short);
+  --signal-red-dim:   var(--bg-elevated);
+  --signal-green:     var(--color-signal-long);
+  --signal-green-dim: var(--bg-elevated);
+  --signal-amber:     var(--color-signal-warn);
+  --signal-amber-dim: var(--bg-elevated);
+  --signal-blue:      var(--color-signal-info);
+  --signal-blue-dim:  var(--bg-elevated);
+
+  --secondary-fill:        var(--color-black);
+  --secondary-fill-hover:  var(--color-ink-800);
+  --secondary-text:        var(--color-white);
+  --brand-on-surface:      var(--color-purple);
+  --ring:                  0 0 0 3px rgba(146, 54, 218, 0.30);
+
+  --v34-glass-bg:        color-mix(in srgb, var(--color-bone-100) 64%, transparent);
+  --v34-glass-bg-hover:  color-mix(in srgb, var(--color-bone-200) 70%, transparent);
+  --v34-glass-border:    color-mix(in srgb, var(--color-slate-900) 14%, transparent);
+  --v34-glass-shadow:    0 1px 2px rgba(15, 12, 35, 0.04),
+                         0 18px 40px -22px rgba(146, 54, 218, 0.18);
+
+  color-scheme: light;
+
+  /* Backward-compat: old Tailwind utility vars */
+  --bg:           250 250 254;
+  --surface:      247 247 251;
+  --surface-soft: 240 240 245;
+  --text:         26 44 68;
+  --text-sec:     60 79 105;
+}
+
+[data-theme="dark"],
+.dark {
+  --bg-page:        var(--color-ink-950);
+  --bg-surface:     var(--color-ink-900);
+  --bg-surface-soft: var(--color-ink-800);
+  --bg-elevated:    var(--color-ink-800);
+  --shimmer-sweep:  rgba(255, 255, 255, 0.05);
+  --border:         rgba(255, 255, 255, 0.08);
+  --border-subtle:  rgba(255, 255, 255, 0.08);
+  --border-strong:  rgba(255, 255, 255, 0.16);
+
+  --text-primary:   var(--color-white);
+  --text-strong:    var(--color-white);
+  --logo-wordmark:  #F6F6F6;
+  --text-default:   var(--color-bone-300);
+  --text-secondary: var(--color-bone-300);
+  --text-muted:     var(--color-slate-500);
+  --text-disabled:  var(--color-ink-700);
+
+  /* 18 May v3 (AJ): dark-mode equivalents - same neutral elevated surface,
+   * colour identity comes from the `.bg-*-dim` utility's inset left rail. */
+  --color-purple-dim: var(--bg-elevated);
+  --bg-purple-dim:    var(--bg-elevated);
+  --signal-red:       var(--color-signal-short);
+  --signal-red-dim:   var(--bg-elevated);
+  --signal-green:     var(--color-signal-long);
+  --signal-green-dim: var(--bg-elevated);
+  --signal-amber:     var(--color-signal-warn);
+  --signal-amber-dim: var(--bg-elevated);
+  --signal-blue:      var(--color-signal-info);
+  --signal-blue-dim:  var(--bg-elevated);
+
+  --secondary-fill:        var(--color-white);
+  --secondary-fill-hover:  var(--color-bone-200);
+  --secondary-text:        var(--color-black);
+  --brand-on-surface:      var(--color-purple);
+  --ring:                  0 0 0 3px rgba(146, 54, 218, 0.40);
+
+  --v34-glass-bg:        color-mix(in srgb, var(--color-ink-900) 62%, transparent);
+  --v34-glass-bg-hover:  color-mix(in srgb, var(--color-ink-800) 70%, transparent);
+  --v34-glass-border:    color-mix(in srgb, white 9%, transparent);
+  --v34-glass-shadow:    0 1px 2px rgba(0, 0, 0, 0.25),
+                         0 24px 48px -24px rgba(146, 54, 218, 0.32);
+
+  color-scheme: dark;
+
+  --bg:           10 10 10;
+  --surface:      20 20 30;
+  --surface-soft: 24 24 27;
+  --text:         255 255 255;
+  --text-sec:     221 221 229;
+}
+
+/* ============================================================================
+   3 · BASE STYLES
+   ========================================================================== */
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    font-feature-settings: "ss01", "cv11";
+    font-family: var(--font-body);
+  }
+
+  #root {
+    font-family: var(--font-body);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.6;
+    color: var(--text-default);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    background: var(--bg-page);
+    color: var(--text-default);
+    font-family: var(--font-body);
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0;
+    transition:
+      background-color var(--duration-base) var(--ease-color),
+      color            var(--duration-base) var(--ease-color);
+  }
+
+  ::selection { background: var(--color-purple); color: var(--color-white); }
+
+  *:focus-visible {
+    outline: none;
+    box-shadow: var(--ring);
+    border-radius: 2px;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    color: var(--text-primary);
+    margin: 0;
+  }
+
+  .tabular, td, .stat, .r-mult, .timestamp {
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* Soft default border - never harsh black */
+  * { border-color: var(--border); }
+
+  textarea { resize: none; }
+
+  /* Native selects - match theme instead of OS default popup colours. */
+  select {
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: var(--bg-page);
+    color: var(--text-primary);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%2364748D' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.625rem center;
+    background-size: 1rem;
+    padding-right: 2.25rem;
+    cursor: pointer;
+  }
+
+  /* Prevent iOS auto-zoom on form elements by ensuring 16px font-size on mobile. */
+  @media screen and (max-width: 768px) {
+    input, select, textarea {
+      font-size: 16px !important;
+    }
+  }
+
+  :root select,
+  [data-theme="light"] select {
+    color-scheme: light;
+  }
+
+  [data-theme="dark"] select,
+  .dark select {
+    color-scheme: dark;
+  }
+
+  select option {
+    background-color: var(--bg-elevated);
+    color: var(--text-primary);
+  }
+
+  select option:checked {
+    background: linear-gradient(
+      0deg,
+      color-mix(in srgb, var(--color-purple) 22%, var(--bg-elevated)) 0%,
+      color-mix(in srgb, var(--color-purple) 22%, var(--bg-elevated)) 100%
+    );
+    color: var(--text-primary);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+/* ============================================================================
+   3.5 · APP SHELL - member + admin layout chrome
+   Full-height sidebar + top bar to its right on md+; main offsets both.
+   ========================================================================== */
+
+@layer components {
+  .app-topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3.5rem;
+    z-index: 50;
+    transition: left var(--duration-base) var(--ease-default);
+  }
+
+  @media (min-width: 768px) {
+    .app-topbar {
+      left: var(--sidebar-w, 256px);
+    }
+  }
+
+  .member-main {
+    min-height: 100vh;
+    min-width: 0;
+    max-width: 100%;
+    width: auto;
+    overflow-x: clip;
+    padding-top: 3.5rem; /* h-14 - matches CypherTopBar / AdminTopBar */
+    background: var(--bg-page);
+    transition: margin-left var(--duration-base) var(--ease-default);
+  }
+
+  @media (min-width: 768px) {
+    .member-main {
+      margin-left: var(--sidebar-w, 256px);
+    }
+  }
+
+  .member-main__content {
+    min-width: 0;
+    max-width: 100%;
+    padding: 1.5rem 1rem;
+  }
+
+  @media (min-width: 640px) {
+    .member-main__content {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .member-main__content {
+      padding: 2rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .member-main__content {
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+    }
+  }
+
+  /* Shimmer skeleton - replaces plain "Loading…" text across migrated pages. */
+  .shimmer {
+    position: relative;
+    overflow: hidden;
+    background-color: var(--bg-surface-soft);
+  }
+
+  .shimmer::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    transform: translateX(-100%);
+    background: linear-gradient(
+      90deg,
+      transparent,
+      var(--shimmer-sweep),
+      transparent
+    );
+    animation: shimmer-sweep 1.4s ease-in-out infinite;
+  }
+}
+
+@keyframes shimmer-sweep {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* ============================================================================
+   4 · UTILITY CLASSES - composed brand patterns
+   ========================================================================== */
+
+@layer utilities {
+  /* Always use the design-system display stack - never Urbanist as fallback. */
+  .font-display {
+    font-family: var(--font-display);
+    font-synthesis: none;
+  }
+
+  /* 18 May v3 (AJ): pulled the leading-bar / tracked-caps treatment - too
+   * close to the SaaS micro-label look. Eyebrows are Clash Display 600 mixed
+   * case - no background, no tracking, no caps.
+   * 21 May (founder review): the literal "/" prefix is replaced by a small
+   * contextual Lucide icon rendered in markup (the `.eyebrow__icon` slot). */
+  .eyebrow {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 6px;
+    font-family: var(--font-display);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: -0.005em;
+    text-transform: none;
+    color: var(--color-purple);
+    line-height: 1.2;
+  }
+  /* The leading marker is now a small contextual Lucide icon rendered in
+     markup (see PageHeader, the dashboard cards, Sidebar nav groups) rather
+     than a literal "/" glyph. Eyebrows that carry an icon use the
+     `.eyebrow__icon` slot below; the old "/" pseudo-element is retired. */
+  .eyebrow__icon {
+    flex-shrink: 0;
+    opacity: 0.7;
+    /* nudge onto the text baseline - the eyebrow row is baseline-aligned */
+    align-self: center;
+  }
+
+  .headline-editorial {
+    font-family: var(--font-body);
+    font-weight: 300;
+    font-size: clamp(48px, 7.5vw, 96px);
+    line-height: 0.98;
+    letter-spacing: -0.035em;
+    color: var(--text-primary);
+  }
+
+  .headline-statement {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: clamp(40px, 6vw, 72px);
+    line-height: 1.0;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--text-primary);
+  }
+
+  /* Section title - used by PageHeader on dashboard surfaces where the full
+   * `headline-statement` hero scale would dominate the dense layout. Sits
+   * between `headline-statement` (hero) and `section-h2` (editorial). */
+  .section-title {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: clamp(28px, 3.5vw, 40px);
+    line-height: 1.05;
+    letter-spacing: -0.01em;
+    color: var(--text-primary);
+  }
+
+  .section-h2 {
+    font-family: var(--font-body);
+    font-weight: 500;
+    font-size: clamp(34px, 5.4vw, 64px);
+    line-height: 1.05;
+    letter-spacing: -0.025em;
+    color: var(--text-primary);
+    text-wrap: balance;
+  }
+  .section-h2 em,
+  .section-h2 .accent {
+    color: var(--color-purple);
+    font-style: italic;
+    font-weight: 500;
+  }
+
+  .lede {
+    font-family: var(--font-body);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text-default);
+    max-width: 56ch;
+    text-wrap: pretty;
+  }
+
+  .hairline-t { border-top: 1px solid var(--border); }
+  .hairline-b { border-bottom: 1px solid var(--border); }
+
+  .purple-ribbon {
+    background-image: linear-gradient(
+      135deg,
+      var(--color-purple-950) 0%,
+      var(--color-purple-800) 25%,
+      var(--color-purple)     55%,
+      var(--color-purple-400) 80%,
+      var(--color-purple-200) 100%
+    );
+  }
+
+  /* 15 May feedback: the gradient text treatment rendered as a solid purple
+     block in some browsers because background-clip:text wasn't supported on
+     the inline span. Killed the gradient entirely - accents are now flat
+     purple text, no background, no highlight rectangle. */
+  .logo-gradient {
+    color: var(--color-purple);
+    background: none;
+    -webkit-text-fill-color: var(--color-purple);
+  }
+
+  /* Universal glass card - the bento surface used everywhere. Brand spec:
+     03-components/cards.md radius-16. */
+  .glass-card {
+    background: var(--v34-glass-bg);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid var(--v34-glass-border);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--v34-glass-shadow);
+    transition:
+      transform   var(--duration-base) var(--ease-transform),
+      border-color var(--duration-base) var(--ease-color),
+      box-shadow  var(--duration-base) var(--ease-transform);
+  }
+  .glass-card.hover-lift:hover,
+  .glass-card[data-hover="true"]:hover {
+    transform: translateY(-3px);
+    border-color: color-mix(in srgb, var(--color-purple) 30%, var(--v34-glass-border));
+    box-shadow: 0 22px 40px -22px rgba(146, 54, 218, 0.30);
+  }
+
+  /* Soft surface card - flat, no glass, used for in-page subsections */
+  .card-soft {
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-xl);
+    padding: 20px 22px;
+  }
+
+  /* Section banner - hero-style block at the top of a page section */
+  .section-banner {
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-xl);
+    padding: 20px 24px;
+  }
+
+  /* 18 May (AJ): form labels switched to plain sentence case Urbanist -
+   * uppercase tracked labels read as Claude-stack form chrome. Mixed-case
+   * semibold body text at small size feels closer to editorial print
+   * forms. */
+  .field-label {
+    display: inline-block;
+    font-family: var(--font-body);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0;
+    text-transform: none;
+    color: var(--text-strong);
+    margin-bottom: 6px;
+  }
+
+  /* Muted eyebrow variant (non-purple) */
+  .eyebrow--muted { color: var(--text-muted); }
+  .eyebrow--green { color: var(--color-signal-long); }
+  .eyebrow--red   { color: var(--color-signal-short); }
+  .eyebrow--amber { color: var(--color-signal-warn); }
+  .eyebrow--blue  { color: var(--color-signal-info); }
+  .eyebrow--foreground { color: var(--text-strong); }
+
+  /* 18 May v3 (AJ): pills redesigned again - dropped the uppercase-+-dot
+   * stamp look (still read as SaaS chrome). Now a solid filled rectangle,
+   * mixed case Clash Display 600, no tracking, no uppercase. Reads like
+   * a print-on-press badge. Tone modifiers below pair solid bg + white
+   * text. */
+  .pill {
+    display: inline-flex;
+    align-items: center;
+    padding: 3px 9px;
+    border-radius: 4px;
+    font-family: var(--font-display);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: -0.005em;
+    text-transform: none;
+    line-height: 1.25;
+  }
+  /* 18 May v3: solid colour fills + white text - no more translucent
+   * 10%-opacity washes. Pills now look like printed badges, not glass chips. */
+  .pill-green  { background: var(--color-signal-long);  color: #fff; }
+  .pill-red    { background: var(--color-signal-short); color: #fff; }
+  .pill-amber  { background: var(--color-signal-warn);  color: #fff; }
+  .pill-blue   { background: var(--color-signal-info);  color: #fff; }
+  .pill-purple { background: var(--color-purple);       color: #fff; }
+}
+
+/* ============================================================================
+   5 · SCROLL-REVEAL
+   ========================================================================== */
+
+@layer components {
+  .sr {
+    opacity: 0;
+    transform: translateY(20px);
+    transition:
+      opacity   var(--duration-section) var(--ease-emphasize),
+      transform var(--duration-section) var(--ease-transform);
+    will-change: transform, opacity;
+  }
+  .sr--in { opacity: 1; transform: translateY(0); }
+  .sr--delay-1 { transition-delay: 80ms; }
+  .sr--delay-2 { transition-delay: 160ms; }
+  .sr--delay-3 { transition-delay: 240ms; }
+  .sr--delay-4 { transition-delay: 320ms; }
+  .sr--delay-5 { transition-delay: 400ms; }
+  .sr--delay-6 { transition-delay: 480ms; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .sr { opacity: 1 !important; transform: none !important; transition: none !important; }
+}
+
+/* ============================================================================
+   6 · BACKWARD-COMPAT aliases
+   Removable once every page has been migrated to the new token names.
+   ========================================================================== */
+
+@layer utilities {
+  .text-purple-dim { color: rgba(146, 54, 218, 0.10); }
+  /* 18 May v3 (AJ): translucent 10% washes pulled - every "*-dim" class now
+   * resolves to a neutral elevated surface + a 2px colored left rail. Gives
+   * surfaces that used to read as glass tints a punchier editorial look -
+   * solid panel with a coloured edge marker instead of a misty overlay. */
+  .bg-purple-dim {
+    background-color: var(--bg-elevated);
+    box-shadow: inset 2px 0 0 var(--color-purple);
+  }
+  .bg-green-dim {
+    background-color: var(--bg-elevated);
+    box-shadow: inset 2px 0 0 var(--color-signal-long);
+  }
+  .bg-red-dim {
+    background-color: var(--bg-elevated);
+    box-shadow: inset 2px 0 0 var(--color-signal-short);
+  }
+  .bg-amber-dim {
+    background-color: var(--bg-elevated);
+    box-shadow: inset 2px 0 0 var(--color-signal-warn);
+  }
+  .bg-blue-dim {
+    background-color: var(--bg-elevated);
+    box-shadow: inset 2px 0 0 var(--color-signal-info);
+  }
+
+  /* Brand purple accent - historically a gradient (light→deep). Currently flat
+   * because the gradient clipped wrongly on inline highlight spans across
+   * line breaks in WebKit. Keep flat until the lockup is reworked. */
+  .gradient-purple {
+    color: var(--color-purple);
+    background: none;
+    -webkit-text-fill-color: var(--color-purple);
+  }
+}
+
+/* ============================================================================
+   7 · LIVE-STATUS PULSE
+   Gentle breathing dot used to flag a currently-open trading session.
+   ========================================================================== */
+
+@keyframes pt-pulse-dot {
+  0%, 100% { opacity: 1;    transform: scale(1); }
+  50%      { opacity: 0.45; transform: scale(0.82); }
+}
+
+@layer utilities {
+  /* Small purple "live" dot with a soft halo and a calm 2s breathe. */
+  .pulse-dot {
+    position: relative;
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-radius: 9999px;
+    background: var(--color-purple);
+    animation: pt-pulse-dot 2s ease-in-out infinite;
+  }
+  .pulse-dot::after {
+    content: "";
+    position: absolute;
+    inset: -3px;
+    border-radius: 9999px;
+    background: var(--color-purple);
+    opacity: 0.22;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pulse-dot { animation: none; }
+}
+
+/* Recharts: suppress browser focus rings + iOS tap highlight on chart paths.
+ * Donut slices were rendering a default blue focus outline on tap/click. */
+.recharts-wrapper,
+.recharts-wrapper * {
+  -webkit-tap-highlight-color: transparent;
+}
+.recharts-wrapper *:focus,
+.recharts-wrapper *:focus-visible,
+.recharts-sector,
+.recharts-pie-sector,
+.recharts-active-shape {
+  outline: none !important;
+}
+
+@keyframes pt-shimmer {
+  from { background-position: 0% center; }
+  to { background-position: -200% center; }
+}
+.animate-shimmer {
+  animation: pt-shimmer 2.5s linear infinite;
+}
+
+/* GENERATED - site-config brand colors (secondary) */
+:root{--secondary-fill:#7700DF;--secondary-fill-hover:#7700DF;}
+
+/* GENERATED - site-config brand primary ramp (#EE7C2C) */
+:root{--color-purple-rgb:238 124 44;--color-purple:#EE7C2C;--color-purple-50:#fef5ee;--color-purple-100:#fcebdf;--color-purple-200:#fad8c0;--color-purple-300:#f7c09a;--color-purple-400:#f3a670;--color-purple-500:#f1904c;--color-purple-700:#be6323;--color-purple-800:#944d1b;--color-purple-900:#6b3814;--color-purple-950:#43230c;--color-indigo-mark:#a7571f;--brand-solid:#EE7C2C;}

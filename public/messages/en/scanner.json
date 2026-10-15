@@ -1,0 +1,325 @@
+{
+  "header": {
+    "badge": "CYPHER SCANNER",
+    "title": "The Cypher stack.",
+    "highlight": "Live on every chart.",
+    "subtitle": "Every indicator. Every chart. Read the setup instantly."
+  },
+  "tierGate": {
+    "what": "Cypher Scanner"
+  },
+  "tabs": {
+    "liveIdeas": "Live Ideas",
+    "howToUse": "How to Use",
+    "detailed": "Detailed",
+    "detailedHeading": "Full scanner guide"
+  },
+  "tradeFromChart": {
+    "title": "Cypher Scanner ideas",
+    "body": "Here are some ideas from the Cypher Scanner. Tap any number - Entry, SL or TP - to copy it."
+  },
+  "rail": {
+    "liveSignals": "Live ideas",
+    "all": "All →",
+    "empty": "No ideas yet.",
+    "fullDetail": "Full detail",
+    "count": "{count}",
+    "confluence": "Conf {score}/8"
+  },
+  "filter": {
+    "pair": "Pair",
+    "allPairs": "All pairs",
+    "timeframe": "Timeframe",
+    "all": "All",
+    "noMatch": "No ideas match these filters."
+  },
+  "direction": {
+    "buy": "buy",
+    "sell": "sell"
+  },
+  "copy": {
+    "entry": "Entry",
+    "sl": "SL",
+    "tp1": "TP1",
+    "tp2": "TP2",
+    "tp3": "TP3",
+    "copied": "{label} copied",
+    "copiedDescription": "{value} · paste into your MT5 ticket."
+  },
+  "time": {
+    "justNow": "just now",
+    "minutesAgo": "{minutes}m ago",
+    "hoursAgo": "{hours}h ago",
+    "daysAgo": "{days}d ago"
+  },
+  "symbolGroups": {
+    "fxMajors": "FX Majors",
+    "fxCrosses": "FX Crosses",
+    "commodities": "Commodities",
+    "indices": "Indices",
+    "crypto": "Crypto",
+    "usStocks": "US Stocks (Live)",
+    "top": "Top Markets"
+  },
+  "symbolPicker": {
+    "search": "Search symbols…"
+  },
+  "lockedChart": {
+    "lockNote": "EZ Trade Scanner · indicators locked.",
+    "indicatorList": "BB · Ichimoku · SAR · MA · RSI"
+  },
+  "chart": {
+    "fvgToggle": "FVG",
+    "fvgShow": "Show Fair Value Gaps",
+    "fvgHide": "Hide Fair Value Gaps",
+    "fvgUnavailable": "FVGs available on 15m / 30m only",
+    "fvgUnavailable15Plus": "FVGs available on 15m and above",
+    "enterFullscreen": "Fullscreen",
+    "exitFullscreen": "Exit fullscreen",
+    "watermark": "EZ TRADE",
+    "oscillatorLabel": "EZ TRADE TRIGGER · RSI 5 · BB 200/1.5σ",
+    "zones": {
+      "bearReversal": "Bear Reversal",
+      "bearRetest": "Bear Retest",
+      "trend": "Trend",
+      "bullRetest": "Bull Retest",
+      "bullReversal": "Bull Reversal"
+    },
+    "legend": {
+      "emaFast": "EMA 5",
+      "emaSlow": "EMA 13",
+      "vidya233": "VIDYA 233",
+      "magnet987": "Magnet 987",
+      "ema200": "EMA 200",
+      "reversalBands": "Reversal Bands"
+    },
+    "source": {
+      "polygon": "🟢 Live",
+      "twelvedata": "🟢 Live",
+      "synthetic": "🟡 Demo data"
+    },
+    "signalPill": {
+      "activeBuy": "▲ Active BUY",
+      "activeSell": "▼ Active SELL",
+      "entry": "Entry",
+      "sl": "SL",
+      "tp1": "TP1",
+      "tp2": "TP2",
+      "tp3": "TP3"
+    },
+    "tradeChip": {
+      "buy": "BUY",
+      "sell": "SELL",
+      "entry": "Entry",
+      "sl": "SL",
+      "tp1": "TP1",
+      "tp2": "TP2",
+      "tp3": "TP3"
+    },
+    "marker": {
+      "buy": "▲ BUY",
+      "sell": "▼ SELL",
+      "sl": "SL",
+      "break": "BREAK",
+      "vol": "Vol {percent}%"
+    },
+    "trendScreener": {
+      "pt": "PT",
+      "bull": "BULL ▲",
+      "bear": "BEAR ▼",
+      "state": {
+        "Trending": "Trending",
+        "Pulling Back": "Pulling Back",
+        "Consolidating": "Consolidating"
+      },
+      "strength": {
+        "Very Strong": "Very Strong",
+        "Strong": "Strong",
+        "Neutral": "Neutral",
+        "Weak": "Weak",
+        "Very Weak": "Very Weak"
+      },
+      "count": "{count}/11"
+    },
+    "drag": {
+      "trendScreener": "Trend Screener",
+      "signal": "Active Signal",
+      "tooltip": "Drag to move · Double-click to reset position"
+    }
+  },
+  "guide": {
+    "title": "Cypher Scanner Essentials",
+    "subtitle": "The full guide to how the Cypher Scanner works and how to use it on TradingView.",
+    "openFull": "Open full guide",
+    "download": "Download"
+  },
+  "requestAccess": {
+    "title": "Request access to the scanner",
+    "description": "Drop your TradingView username and we'll grant you access to the invite-only Cypher Scanner. Signals also stream to your dashboard below.",
+    "placeholder": "your_tradingview_username",
+    "submitting": "Submitting…",
+    "submit": "Request access",
+    "confirmedTitle": "You're on the list",
+    "confirmedBody": "We'll add @{{username}} to the Cypher Scanner script on the next sync (within 24 hours). This is locked once submitted - contact support if it's incorrect.",
+    "errorFallback": "Something went wrong."
+  },
+  "manual": {
+    "title": "How to read the scanner",
+    "intro": "A clear guide to what is on the chart and how to trade what you see. Use the menu on the right to jump to any section.",
+    "jumpTo": "Jump to section",
+    "onThisPage": "On this page",
+    "g1": "Getting started",
+    "g2": "What is on the chart",
+    "g3": "Trading the system",
+    "overview": {
+      "title": "What the Cypher Scanner is",
+      "lead": "The Cypher Scanner reads the chart on several layers at once: trend, momentum, reaction levels and volatility. When enough of those layers agree on the same candle, a clear signal prints on the screen. A green B to buy, a purple S to sell. You do not read indicators, you read the result.",
+      "p": "The trade arrives fully formed. The entry, the stop loss, and three take-profit targets are worked out for you and drawn on the chart. Your only job is to act when the conditions line up, and to wait when they do not.",
+      "c1t": "One system",
+      "c1b": "Trend, momentum, levels and volatility read together, so you are not juggling a dozen indicators.",
+      "c2t": "Every market",
+      "c2b": "Forex, gold, indices and crypto. The scanner adapts its levels to whatever you load.",
+      "c3t": "Any timeframe",
+      "c3b": "From scalping the 5m to swinging the daily, the reads are the same. You pick the clock."
+    },
+    "whoAndWhen": {
+      "title": "Who it is for, and when to use it",
+      "p1": "Cypher was built for two kinds of trader: the one starting out who wants the chart to make sense, and the one who already trades and wants cleaner setups with less screen time.",
+      "c1t": "New traders",
+      "c1b": "Everything is colour coded and labelled. Green means up, purple means down, a letter on the candle means it is time. Learn a handful of reads and you can follow along from day one.",
+      "c2t": "Experienced traders",
+      "c2b": "Use it as a confirmation layer. Filter setups, time entries more precisely, and read multi-timeframe context at a glance.",
+      "p2": "It also adapts to whatever the market is doing right now.",
+      "c3t": "Trending",
+      "c3b": "Price is moving with momentum. Cypher highlights pullbacks and continuation entries so you join the trend instead of chasing it.",
+      "c4t": "Ranging",
+      "c4b": "Price is stuck between two levels. Cypher marks the top and bottom so you can fade the edges rather than guess.",
+      "c5t": "Pulling back",
+      "c5b": "A strong trend retraces into the inner band. These are the cleanest entries, and Cypher flags the re-entry."
+    },
+    "markets": {
+      "title": "Markets and timeframes",
+      "p1": "Cypher works across every major asset class and adapts its reaction levels automatically. You do not change settings between gold and indices, or between forex and crypto. One tool, every market.",
+      "c1t": "Forex",
+      "c1b": "Majors, crosses and emerging-market pairs. Low-priced and high-priced pairs alike.",
+      "c2t": "Gold and metals",
+      "c2b": "Spot gold, silver and other metals get their own tuning for higher-priced assets.",
+      "c3t": "Indices",
+      "c3b": "S&P, Nasdaq, Dow and the rest. Wider reaction levels suit how indices move.",
+      "c4t": "Crypto",
+      "c4b": "Bitcoin, Ethereum and the large-cap alts, using the wider levels that suit crypto volatility.",
+      "calloutTitle": "Where to start",
+      "callout": "Begin with Gold (XAU/USD), NAS100 and US30 on the 15m, 1h and 4h. They give the cleanest reads. Once you are comfortable, add more pairs and timeframes from there.",
+      "p2": "Any style works. Scalpers read the short timeframes the same way as the long ones. Day traders sit in the sweet spot on the 15m to 1h. Swing traders take fewer, larger setups on the higher timeframes. The routine never changes, only the clock."
+    },
+    "flag": {
+      "title": "The Flag: your signal",
+      "lead": "The Flag is the main trigger. It is the moment the system's reads agree on the same candle. When that happens, a single letter prints: a green B for buy, a purple S for sell, on the candle it happens.",
+      "p": "Behind the letter, three things line up on the same candle: the fast trend lines cross, the candle closes in the trade's direction, and the underlying flow at the bottom of the chart is not pointing the other way. The instant those agree, the Flag prints. You do not track any of it. You wait for the letter.",
+      "callout": "The Flag sits just off the candle, the buy below and the sell above, so it never hides behind price. It fires once when a fresh setup lines up, rather than repeating while a single move plays out."
+    },
+    "reversalBands": {
+      "title": "Reversal Bands",
+      "p1": "Cypher draws adaptive bands that move with volatility and mark where price is most likely to turn.",
+      "i1": "Inner band: the first level of support and resistance, where pullbacks tend to end.",
+      "i2": "Outer band: the high-probability reversal zone, where the bigger turns happen.",
+      "p2": "The space between the bands is tinted green or purple so you can see at a glance which side you are on. The strongest entries happen where price reacts to a band and the rest of the system agrees."
+    },
+    "keyLevels": {
+      "title": "Key Levels",
+      "p1": "Cypher draws the round-number price levels that large players reference for orders. They form zones of support and resistance you can see coming well in advance.",
+      "i1": "Red zones above price act as resistance.",
+      "i2": "Blue zones below price act as support.",
+      "i3": "Grey lines mark the levels, with a coloured glow showing which side of price they sit.",
+      "p2": "The spacing adapts to your timeframe and market. When a band touch lines up with a key level, the odds of a clean reaction go up."
+    },
+    "pivots": {
+      "title": "Pivots and Fair Value Gaps",
+      "p1": "Pivots are well-known reaction zones calculated from the previous session. They add a third layer of support and resistance.",
+      "i1": "Green lines below price are the support pivots.",
+      "i2": "Purple lines above price are the resistance pivots.",
+      "i3": "Inner pivots are nearby targets. Outer pivots are extreme stretch zones.",
+      "calloutTitle": "Fair Value Gaps",
+      "callout": "On the 15m and above, Cypher marks Fair Value Gaps as translucent boxes: imbalances left behind when price moves too fast. Markets tend to come back and fill them, so an unfilled gap becomes a target area."
+    },
+    "trendTable": {
+      "title": "Trend Table",
+      "p1": "The Trend Table sits in the top-right corner and reads the market on several timeframes at once, so you can see which way each layer points in a single glance.",
+      "i1": "One row per timeframe.",
+      "i2": "Green means that timeframe is bullish, purple means bearish.",
+      "i3": "Your current timeframe is highlighted, so you always know where you sit.",
+      "callout": "Each column reads from that timeframe's own last closed candle, so a column shows the same thing no matter which chart you are on. The most useful read is your trading timeframe against the one above it. When both agree, you have the wind behind you."
+    },
+    "pulseLine": {
+      "title": "The Pulse Line",
+      "p1": "The Pulse Line lives in its own pane below the chart, like a heart monitor for momentum. It is there for confirmation, not as the trigger, and it often moves before price does.",
+      "c1t": "Direction",
+      "c1b": "Is it pointing the same way as your trade? Up for buys, down for sells. The basic check.",
+      "c2t": "Secondary-signal cross",
+      "c2b": "A large dot prints when momentum hands over. One of the strongest early cues.",
+      "c3t": "The \"D\" divergence label",
+      "c3b": "When the Pulse Line moves the opposite way to price, a D prints. The strongest reversal cue Cypher gives.",
+      "c4t": "Bar colour at the bottom",
+      "c4b": "A row of bars shows the underlying bias. Green bullish, purple bearish, grey mixed."
+    },
+    "barColour": {
+      "title": "Bar colour and arrows",
+      "p1": "Three smaller features sit on the candles and quietly do a lot of the work.",
+      "c1t": "Bar colour",
+      "c1b": "Every candle is outlined by the underlying read. Green is bullish flow, purple is bearish, grey is mixed or waiting. This is one of the conditions behind the Flag.",
+      "c2t": "Sniper arrows",
+      "c2b": "Small arrows for quick continuation entries inside a strong trend. Handy for adding to winners or taking pullback re-entries.",
+      "c3t": "Break arrows",
+      "c3b": "Larger arrows when price breaks a recent swing with volume behind it, labelled with the volume strength."
+    },
+    "setups": {
+      "title": "The three setups",
+      "p1": "Almost every Cypher trade is one of three types. Knowing which one you are in tells you what to confirm and what to ignore.",
+      "c1t": "The Range",
+      "c1b": "Price is moving sideways between a top and a bottom. Trade the bounces and fade the extremes.",
+      "c2t": "The Trend",
+      "c2b": "Price is moving one way. Wait for a pullback to the inner band, then enter on the continuation when the Flag fires.",
+      "c3t": "The Reversal",
+      "c3b": "Price has run into a major band and momentum is exhausted. Catch the turn as the Flag fires the other way."
+    },
+    "routine": {
+      "title": "The five-rule routine",
+      "p1": "Whichever setup you are in, the routine is the same. Run through it in order. If a rule fails, you skip the trade. If they all pass, you take it.",
+      "s1t": "Setup",
+      "s1b": "Identify which of the three setups is in front of you. The bands and the Trend Table do most of that work for you.",
+      "s2t": "The Flag",
+      "s2b": "Wait for the letter. No B or S, no trade. This is the moment the system tells you the pieces line up, and it anchors every other check.",
+      "s3t": "Pulse Line",
+      "s3b": "Confirm momentum agrees: its direction, a secondary-signal cross, or a fresh divergence D.",
+      "s4t": "Zone",
+      "s4b": "Make sure price is at a meaningful zone: a reversal band, a key level, a pivot, or an unfilled gap. Two lining up is good, three is excellent.",
+      "s5t": "Risk to reward",
+      "s5b": "Read the entry, stop and targets on the chart, place the trade with proper risk to reward, then manage to plan."
+    },
+    "tradePlan": {
+      "title": "Your trade plan: entry, stop, targets",
+      "p1": "The moment the Flag fires, the levels appear on the right edge of the chart. You do not calculate. You read.",
+      "r1k": "Entry",
+      "r1v": "The price marked at the Flag candle. Enter at market, or wait for a small pullback into it for a tighter stop.",
+      "r2k": "Stop loss",
+      "r2v": "Sits at the most recent swing: the swing low for a buy, the swing high for a sell. If price closes through it, the read is invalid and you exit.",
+      "r3k": "Take profits",
+      "r3v": "TP1, TP2 and TP3 sit at one, two and three times the distance from your entry to the stop. The same clean risk to reward on every market.",
+      "calloutTitle": "Managing the trade",
+      "callout": "A common approach is to take part off at TP1, more at TP2, and trail the rest toward TP3. Moving your stop to entry once TP1 is hit protects the trade. If the bar colour flips against you before TP2, take the rest off at market."
+    },
+    "faq": {
+      "title": "Quick answers",
+      "r1k": "Do I have to watch all of this?",
+      "r1v": "No. Wait for the letter. Everything else is context that makes a signal stronger or weaker.",
+      "r2k": "How many signals will I get?",
+      "r2v": "It depends on the pair and timeframe. The 15m, 1h and 4h give fewer, cleaner reads than the very low timeframes.",
+      "r3k": "What if two timeframes disagree?",
+      "r3v": "Stand down, or wait for them to line up. The best trade is sometimes no trade.",
+      "r4k": "Where do the entry, stop and targets come from?",
+      "r4v": "They are drawn for you automatically the moment the Flag fires.",
+      "r5k": "Can I use it on any market?",
+      "r5v": "Yes. Cypher adapts its levels to forex, gold, indices and crypto without changing settings."
+    }
+  }
+}

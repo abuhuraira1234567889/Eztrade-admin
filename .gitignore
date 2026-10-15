@@ -1,0 +1,14 @@
+# never commit secrets, installed modules or build output
+node_modules/
+dist/
+dist.*/
+dev-dist/
+.env
+.env.*
+!.env.example
+_env.local
+*.tsbuildinfo
+*.log
+.claude/
+.codex/
+.DS_Store

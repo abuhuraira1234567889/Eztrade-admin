@@ -7,10 +7,10 @@
     "joinTelegram": "Join Telegram Group"
   },
   "streams": {
-    "synergy": { "tagline": "Multi-confluence flagship" },
-    "pulsex": { "tagline": "Short-term scalper" },
-    "nova": { "tagline": "Swing & position" },
-    "zen": { "tagline": "Minimal high-conviction" }
+    "aurex": { "tagline": "Multi-confluence flagship" },
+    "vektor": { "tagline": "Short-term scalper" },
+    "meridian": { "tagline": "Swing & position" },
+    "halcyon": { "tagline": "Minimal high-conviction" }
   },
   "stats": {
     "callsThisWeek": "Calls this week",
@@ -83,7 +83,7 @@
     "newMessageFallback": "New message in the feed",
     "empty": {
       "title": "Nothing in the feed yet",
-      "body": "Synergy, PulseX, Nova, Zen and Announcements land here as analysts post."
+      "body": "Aurex, Vektor, Meridian, Halcyon and Announcements land here as analysts post."
     },
     "day": {
       "today": "Today",

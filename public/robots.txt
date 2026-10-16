@@ -4,7 +4,6 @@ User-agent: *
 Disallow: /admin/
 Disallow: /api/
 Disallow: /account/
-Disallow: /pt-console/
 Disallow: /onboarding/
 Disallow: /suspended/
 Disallow: /dashboard/

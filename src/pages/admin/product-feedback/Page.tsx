@@ -525,7 +525,7 @@ function SurveySetup() {
               className={inputCls}
               value={newItem[s._id] ?? ""}
               maxLength={120}
-              placeholder="Add an item, e.g. Storm"
+              placeholder="Add an item, e.g. Kinetic"
               onChange={(e) => setNewItem((m) => ({ ...m, [s._id]: e.target.value }))}
             />
             <button

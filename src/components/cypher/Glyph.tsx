@@ -6,7 +6,7 @@
  * SCOPE (17 May 2026, after brand audit):
  * - Use Glyph ONLY for brand-specific marks: the pillar icons (academy /
  * signals / live / tools / community / rewards), the stream pillars
- * (synergy / pulsex / nova / zen / edge), how-it-works steps, the wordmark.
+ * (aurex / vektor / meridian / halcyon / edge), how-it-works steps, the wordmark.
  * - Use Lucide for every utility / system icon (user, settings, chevrons,
  * arrows, plus, x, check, etc.). Lucide is the brand-approved library
  * per `02-visual-system/iconography.md` and most pages already use it.
@@ -33,7 +33,7 @@ export type GlyphName =
  // Community
  | "comm-chat" | "comm-wall"
  // Streams
- | "synergy" | "pulsex" | "nova" | "zen"
+ | "aurex" | "vektor" | "meridian" | "halcyon"
  // Utility (landing)
  | "arrow-right" | "clock" | "users" | "play"
  | "fmt-video" | "fmt-book" | "fmt-doc"
@@ -181,28 +181,29 @@ const GLYPHS: Record<GlyphName, string> = {
  <polygon points="12 8 13.5 12 17.5 12 14.5 14.5 16 19 12 16.5 8 19 9.5 14.5 6.5 12 10.5 12" fill="currentColor" stroke="none"/>
  `,
 
- // ── 4 signal stream glyphs ──────────────────────────────────────────────
- synergy: `
- <ellipse cx="9" cy="11" rx="6" ry="5"/>
- <ellipse cx="15" cy="11" rx="6" ry="5"/>
- <ellipse cx="12" cy="15" rx="6" ry="5"/>
+ // ── signal stream glyphs (Aurex / Vektor / Meridian / Halcyon) ──────────────────────────────────────────────
+ aurex: `
+ <path d="M12 2.6l8.1 4.7v9.4L12 21.4l-8.1-4.7V7.3z"/>
+ <path d="M8.3 16.2L12 8.2l3.7 8"/>
+ <line x1="9.8" y1="13.4" x2="14.2" y2="13.4"/>
  `,
- pulsex: `
- <polyline points="2 14 7 14 9 6 12 20 14 10 17 14 22 14"/>
- <line x1="18" y1="6" x2="22" y2="2"/>
- <line x1="22" y1="6" x2="18" y2="2"/>
+ vektor: `
+ <line x1="3" y1="9" x2="10" y2="9" opacity="0.5"/>
+ <line x1="3" y1="15" x2="10" y2="15" opacity="0.5"/>
+ <line x1="4.5" y1="19.5" x2="19.5" y2="4.5"/>
+ <polyline points="11.5 4.5 19.5 4.5 19.5 12.5"/>
  `,
- nova: `
- <line x1="12" y1="3" x2="12" y2="21"/>
- <line x1="3" y1="12" x2="21" y2="12"/>
- <line x1="5.5" y1="5.5" x2="18.5" y2="18.5"/>
- <line x1="18.5" y1="5.5" x2="5.5" y2="18.5"/>
- <circle cx="12" cy="12" r="2.4" fill="currentColor" stroke="none"/>
- `,
- zen: `
+ meridian: `
  <circle cx="12" cy="12" r="9"/>
- <circle cx="12" cy="12" r="5.5"/>
- <circle cx="12" cy="12" r="2" fill="currentColor" stroke="none"/>
+ <path d="M12 3c-3.3 3-3.3 15 0 18" opacity="0.6"/>
+ <path d="M12 3c3.3 3 3.3 15 0 18" opacity="0.6"/>
+ <path d="M3.8 13.5c3-3.6 5.7-3.6 8.2-1s5.2 2.6 8.2-1"/>
+ `,
+ halcyon: `
+ <path d="M5.5 14a6.5 6.5 0 0 1 13 0"/>
+ <line x1="2.5" y1="14" x2="21.5" y2="14"/>
+ <line x1="6" y1="17.7" x2="18" y2="17.7" opacity="0.7"/>
+ <line x1="9.2" y1="21" x2="14.8" y2="21" opacity="0.45"/>
  `,
 
  // ── Utility glyphs (from landing) ───────────────────────────────────────

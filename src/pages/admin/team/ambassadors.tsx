@@ -67,7 +67,7 @@ export function AmbassadorManager() {
         </h2>
         <p className="text-sm text-muted-foreground mt-1">
           Grants a member the <strong>entire platform</strong> - every rank-locked feature
-          (AI Coach, Scanner, Journal, Academy, the Synergy Telegram group), with the broker
+          (AI Coach, Scanner, Journal, Academy, the Aurex Telegram group), with the broker
           and onboarding requirements bypassed. Independent of their rank.
         </p>
       </div>

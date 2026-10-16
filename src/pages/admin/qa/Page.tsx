@@ -94,7 +94,7 @@ export default function QAHarnessPage() {
  // 3. Seed data sanity
  const { count: streamCount } = await supabase.from("signal_streams").select("*", { count: "exact", head: true });
  checks.push({
- name: "seed: signal_streams (Synergy/PulseX/Nova/Zen)",
+ name: "seed: signal_streams (Aurex/Vektor/Meridian/Halcyon)",
  ok: (streamCount ?? 0) >= 4,
  detail: `${streamCount ?? 0} streams found, expected ≥4`,
  severity: "warn",

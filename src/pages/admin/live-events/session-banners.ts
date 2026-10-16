@@ -11,17 +11,17 @@ export type SessionBanner = {
 };
 
 const KEYS = [
-  { key: "synergy", label: "Synergy" },
-  { key: "nova", label: "Nova" },
+  { key: "aurex", label: "Aurex" },
+  { key: "meridian", label: "Meridian" },
   { key: "founder-ama", label: "Founder AMA" },
   { key: "weekly-recap", label: "Weekly Recap" },
   { key: "market-breakdown", label: "Market Breakdown" },
   { key: "trading-psychology", label: "Trading Psychology" },
   { key: "community", label: "Community" },
-  { key: "pulsex", label: "PulseX Live Session" },
+  { key: "vektor", label: "Vektor Live Session" },
   { key: "cypher", label: "Cypher Live Trading" },
   { key: "new-member-onboarding", label: "New Member Onboarding" },
-  { key: "synergy-live", label: "Synergy Live Trading" },
+  { key: "aurex-live", label: "Aurex Live Trading" },
 ] as const;
 
 export const SESSION_BANNERS: SessionBanner[] = KEYS.map((k) => ({

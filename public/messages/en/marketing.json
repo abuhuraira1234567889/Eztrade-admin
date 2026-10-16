@@ -73,7 +73,7 @@
       },
       "4": {
         "name": "Silver",
-        "unlocks": "+ Synergy group"
+        "unlocks": "+ Aurex group"
       },
       "5": {
         "name": "Gold",
@@ -97,33 +97,33 @@
     "intro": "Posted live by our analysts in Telegram. Mirrored to your platform inbox the second they hit, parsed into structured entries, AI-scored for confidence, and ready to paste into your MT5 ticket.",
     "streams": {
       "0": {
-        "name": "Synergy",
+        "name": "Aurex",
         "tagline": "Multi-confluence flagship",
         "desc": "Our highest-conviction stream. Only fires when 4+ rules align across timeframes."
       },
       "1": {
-        "name": "PulseX",
+        "name": "Vektor",
         "tagline": "Short-term scalper",
         "desc": "Tight stops, fast targets. M5 / M15 setups for active traders during London + NY sessions."
       },
       "2": {
-        "name": "Nova",
+        "name": "Meridian",
         "tagline": "Swing & position",
         "desc": "Daily / 4H setups for traders who can't watch the screen all day. Hold for days, not minutes."
       },
       "3": {
-        "name": "Zen",
+        "name": "Halcyon",
         "tagline": "Minimal high-conviction",
         "desc": "One or two signals a day, max. Curated by senior analysts when the chart is screaming at us."
       }
     },
     "sampleLive": "Live · 3 min ago",
-    "sampleStreamTag": "⚡ SYNERGY",
+    "sampleStreamTag": "⚡ AUREX",
     "sampleSymbol": "XAU/USD",
     "sampleSide": "BUY",
     "sampleAiLabel": "AI",
     "sampleAiScore": "87%",
-    "sampleMeta": "Synergy · educational",
+    "sampleMeta": "Aurex · educational",
     "chipEntry": "Entry",
     "chipSl": "SL",
     "chipTp1": "TP1",

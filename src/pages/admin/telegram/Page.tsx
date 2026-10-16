@@ -18,11 +18,11 @@ const FEED_LIMIT = 300;
 const POLL_MS = 20_000;
 
 // group_id (telegram_membership_events / signal_groups) → display label. The
-// 'silver' group is branded "Synergy" (see backend lib/telegram/groups). A null
+// 'silver' group is branded "Aurex" (see backend lib/telegram/groups). A null
 // group_id is a verification (account link), which precedes any group join.
 const GROUP_LABEL: Record<string, string> = {
   eztrade: "EZ Trade",
-  silver: "Synergy",
+  silver: "Aurex",
   cypher: "Cypher Trading",
 };
 function groupLabel(id: string | null): string {
@@ -225,7 +225,7 @@ export default function AdminTelegramFeedPage() {
           </h1>
           <p className="text-sm text-muted-foreground mt-1 max-w-2xl">
             Live feed of Telegram account verifications and group joins / removals across all members.
-            Each row shows who, which group (EZ Trade / Synergy), the action, and the reason a member
+            Each row shows who, which group (EZ Trade / Aurex), the action, and the reason a member
             was removed. Click a row to open that member's full profile.
           </p>
         </div>
@@ -270,7 +270,7 @@ export default function AdminTelegramFeedPage() {
         <select value={group} onChange={(e) => setGroup(e.target.value as GroupFilter)} className={selectCls} title="Filter by group">
           <option value="">All groups</option>
           <option value="eztrade">EZ Trade</option>
-          <option value="silver">Synergy</option>
+          <option value="silver">Aurex</option>
           <option value="cypher">Cypher Trading</option>
         </select>
       </div>

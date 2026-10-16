@@ -35,7 +35,7 @@ export function AuthBrandPanel() {
   ] as const;
 
   // The four strategies, taught end-to-end in the Academy.
-  const tags = ["synergy", "pulsex", "nova", "zen"] as const;
+  const tags = ["aurex", "vektor", "meridian", "halcyon"] as const;
 
   return (
     <aside

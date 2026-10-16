@@ -7,7 +7,7 @@ export const FEATURE_GATE_DEFAULTS: FeatureGateRow[] = [
   { feature: "academy", label: "Academy", min_tier: 1 },
   { feature: "cypher_scanner", label: "Cypher Scanner", min_tier: 2 },
   { feature: "trade_journal", label: "Trade Journal & Analytics", min_tier: 2 },
-  { feature: "synergy", label: "Synergy (Telegram)", min_tier: 3 },
+  { feature: "aurex", label: "Aurex (Telegram)", min_tier: 3 },
   { feature: "ai_coach", label: "AI Coach", min_tier: 5 },
 ];
 

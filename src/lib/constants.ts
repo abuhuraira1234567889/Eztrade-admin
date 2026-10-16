@@ -107,7 +107,7 @@ export const TIER_BADGES: Record<number, string> = {
  7: "/badges/vip.png",
 };
 
-export const SIGNAL_STREAM_SLUGS = ["synergy", "pulsex", "nova", "zen"] as const;
+export const SIGNAL_STREAM_SLUGS = ["aurex", "vektor", "meridian", "halcyon"] as const;
 
 export const ACTIVE_BALANCE_MIN_USD = 250;
 export const ACTIVE_TRADE_WINDOW_DAYS = 30;

@@ -471,7 +471,7 @@ export default function TierThresholdsAdminPage() {
         <p className="text-sm text-muted-foreground mt-1 mb-3">
           Set the minimum rank that unlocks each feature. A feature unlocks at the chosen rank and
           every rank above it. Enforced everywhere - nav, page access, scanner/TradingView grant,
-          and the Synergy Telegram gate.
+          and the Aurex Telegram gate.
         </p>
         <div className="rounded-xl border border-border bg-surface overflow-hidden max-w-2xl">
           <table className="w-full text-sm">

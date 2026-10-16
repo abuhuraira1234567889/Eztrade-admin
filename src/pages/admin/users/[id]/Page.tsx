@@ -67,7 +67,7 @@ type AuditRow = ActivityAuditRow;
 // signal_groups.id → display name. Mirrors GROUP_LABEL on the Telegram feed page.
 const TG_GROUP_LABEL: Record<string, string> = {
   eztrade: "EZ Trade",
-  silver: "Synergy",
+  silver: "Aurex",
   cypher: "Cypher Trading",
 };
 
@@ -637,7 +637,7 @@ export default function AdminUserDetailPage() {
                   const left = e.event === "left";
                   const verified = e.event === "verified";
                   // Group ids are branded for display (backend lib/telegram/groups):
-                  // 'silver' → Synergy, 'cypher' → Cypher Trading.
+                  // 'silver' → Aurex, 'cypher' → Cypher Trading.
                   const groupName = TG_GROUP_LABEL[e.group_id ?? ""] ?? e.group_id;
                   // Prefer the platform-recorded reason; fall back to the raw Telegram
                   // status so an external kick / voluntary leave still reads clearly.

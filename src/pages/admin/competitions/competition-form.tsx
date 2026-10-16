@@ -78,7 +78,7 @@ function toLocalInput(iso: string | undefined | null): string {
 
 /** Must match DB check constraint competitions_kind_check. */
 const KIND_OPTIONS: { value: string; label: string }[] = [
-  { value: "league", label: "League · ongoing PT score ladder" },
+  { value: "league", label: "League · ongoing ET Score ladder" },
   { value: "referral_race", label: "Referral race" },
   { value: "best_analysis", label: "Best analysis" },
   { value: "custom", label: "Custom" },

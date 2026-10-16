@@ -51,7 +51,6 @@ type RestrictedRow = {
 /** Brokers get their own filter because each verifies against a different
  *  system - a combined count hides which provider is actually failing. */
 const BROKER_LABEL: Record<string, string> = {
-  puprime: "PU Prime",
   tradequo: "TradeQuo",
 };
 

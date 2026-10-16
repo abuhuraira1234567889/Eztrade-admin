@@ -23,6 +23,7 @@ export default function CsvImportPage() {
  const { data: brokers } = await supabase
  .from("brokers")
  .select("id, slug, display_name, csv_format, is_active")
+ .eq("is_active", true)
  .order("display_name");
 
  const __jsx = (

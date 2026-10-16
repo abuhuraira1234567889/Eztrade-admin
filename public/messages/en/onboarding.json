@@ -12,7 +12,7 @@
     "startVerification": "Start verification"
   },
   "instructions": {
-    "eyebrow": "STEP 1 · OPEN PU PRIME",
+    "eyebrow": "STEP 1 · OPEN TRADEQUO",
     "heading": "Open your TradeQuo account",
     "intro": "EZ Trade requires a TradeQuo account opened under our IB. Use the link below. It's pre-filled with the right code.",
     "referredByName": "Referred by {name}.",

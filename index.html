@@ -19,7 +19,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no" />
     <meta name="theme-color" content="#EE7C2C" />
-    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="icon" href="/favicon.ico" sizes="48x48" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
+    <!-- Internal console: keep it out of search results, but give shared links a proper preview card. -->
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="description" content="Internal operations console for the EZ Trade platform." />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="EZ Trade" />
+    <meta property="og:title" content="EZ Trade · Admin Console" />
+    <meta property="og:description" content="Internal operations console for the EZ Trade platform." />
+    <!-- Relative on purpose: the admin host differs per deploy (see vite.config allowedHosts / backend CORS_ORIGIN). -->
+    <meta property="og:image" content="/og/og-admin.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="EZ Trade Admin Console" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="/og/og-admin.jpg" />
     <title>EZ Trade</title>
     <!-- Clash Display - load early so font-display headings don't fall back to Urbanist bold. -->
     <link rel="preconnect" href="https://api.fontshare.com" crossorigin />

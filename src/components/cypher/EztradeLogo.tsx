@@ -3,10 +3,20 @@ import { BRAND } from "@/lib/brand.generated";
 
 type Props = { className?: string; width?: number | string; height?: number | string; wordmark?: boolean };
 
+/** Bundled EZ Trade brush artwork (public/brand). */
+const BUNDLED_LOGO = "/brand/logo.svg";
+const BUNDLED_MARK = "/brand/logo-mark.png";
+
 export function EztradeLogo({ className, width, height, wordmark = true }: Props) {
   const h = typeof height === "number" ? height : 20;
   if (BRAND.logoUrl) {
-    const side = Math.max(h, 28);
+    const isBundledBrand = BRAND.logoUrl === BUNDLED_LOGO;
+    // Mark-only slot (collapsed sidebar, 64px wide): swap the wide wordmark for the EZ mark.
+    if (!wordmark) {
+      return <img src={isBundledBrand ? BUNDLED_MARK : BRAND.logoUrl} alt={BRAND.name} className={className} style={{ width: 36, height: "auto", maxHeight: 36, objectFit: "contain", display: "block" }} />;
+    }
+    // The brush wordmark spends ~40% of its height on drips and splatter, so it gets extra height.
+    const side = isBundledBrand ? Math.max(Math.round(h * 1.75), 36) : Math.max(h, 28);
     return <img src={BRAND.logoUrl} alt={BRAND.name} className={className} style={{ height: side, width: "auto", maxWidth: 220, objectFit: "contain", display: "block" }} />;
   }
   if (!wordmark) {

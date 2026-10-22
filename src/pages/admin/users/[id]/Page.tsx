@@ -25,7 +25,7 @@ import { startViewAs, banUser, unbanUser, setPermanentAccess } from "@/services/
 
 const PLATFORM_URL = (
   (import.meta.env.VITE_PLATFORM_URL as string | undefined) ??
-  "https://eztrade.io"
+  "https://www.eztrade.io"
 ).replace(/\/$/, "");
 
 type TgEvent = {

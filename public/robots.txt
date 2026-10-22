@@ -24,4 +24,4 @@ Allow: /risk
 Allow: /about
 Allow: /press
 
-Sitemap: https://eztrade.io/sitemap.xml
+Sitemap: https://www.eztrade.io/sitemap.xml

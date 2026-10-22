@@ -24,4 +24,4 @@ Allow: /risk
 Allow: /about
 Allow: /press
 
-Sitemap: https://ezfe.blockmob.xyz/sitemap.xml
+Sitemap: https://eztrade.io/sitemap.xml

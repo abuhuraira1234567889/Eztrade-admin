@@ -7,8 +7,7 @@ export default defineConfig(({ mode }) => {
   const apiProxyTarget = env.VITE_API_PROXY ?? "http://localhost:3001";
 
   const allowedHosts = [
-    "internalops.ezfe.blockmob.xyz",
-    "internalops.ezfe.blockmob.xyz",
+    "operations.eztrade.io",
   ];
 
   return {

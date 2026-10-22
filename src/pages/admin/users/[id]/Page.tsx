@@ -25,7 +25,7 @@ import { startViewAs, banUser, unbanUser } from "@/services/action-stubs";
 
 const PLATFORM_URL = (
   (import.meta.env.VITE_PLATFORM_URL as string | undefined) ??
-  "https://ezfe.blockmob.xyz"
+  "https://eztrade.io"
 ).replace(/\/$/, "");
 
 type TgEvent = {

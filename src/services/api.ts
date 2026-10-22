@@ -7,11 +7,11 @@ import { supabase } from "@/lib/supabase/client";
  * In dev: leave VITE_API_URL empty - requests use relative /api paths via Vite proxy.
  * In prod: set VITE_API_URL=https://api.your-domain.com
  */
-// http://ezbe.blockmob.xyz redirects to HTTPS; browsers turn that redirect into GET and
+// http://api.eztrade.io redirects to HTTPS; browsers turn that redirect into GET and
 // quiz create returns "lesson_id query param is required". Always use https in production.
 function resolveApiBaseUrl(): string {
   let url = (import.meta.env.VITE_API_URL ?? "").trim();
-  if (url.startsWith("http://ezbe.blockmob.xyz")) {
+  if (url.startsWith("http://api.eztrade.io")) {
     url = url.replace("http://", "https://");
   }
   return url.replace(/\/$/, "");

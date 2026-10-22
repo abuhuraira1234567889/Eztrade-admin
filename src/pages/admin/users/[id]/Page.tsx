@@ -211,6 +211,7 @@ export default function AdminUserDetailPage() {
   const [viewAsBusy, setViewAsBusy] = useState(false);
   const [banBusy, setBanBusy] = useState(false);
   const [permBusy, setPermBusy] = useState(false);
+  const [permModal, setPermModal] = useState<null | "grant" | "remove">(null);
   const [isSuperAdmin, setIsSuperAdmin] = useState(false);
   useEffect(() => {
     // Permanent access is a super-admin grant; other roles never see the button.
@@ -383,15 +384,19 @@ export default function AdminUserDetailPage() {
     toast.success(`Opening read-only view as ${res.user.name ?? res.user.email ?? "user"}`);
   }
 
-  async function togglePermanentAccess() {
-    if (!userId || !data?.profile) return;
-    const enable = !data.profile.permanent_access;
-    const ok = window.confirm(
-      enable
-        ? "Give this member permanent access? They get full access at the top rank, as an ambassador, with no broker / IB requirement."
-        : "Remove permanent access? The member goes back to the normal rank and IB rules (the ambassador flag is removed too).",
-    );
-    if (!ok) return;
+  function togglePermanentAccess() {
+    if (!data?.profile) return;
+    setPermModal(data.profile.permanent_access ? "remove" : "grant");
+  }
+
+  function closePermModal() {
+    if (permBusy) return;
+    setPermModal(null);
+  }
+
+  async function confirmPermanentAccess() {
+    if (!userId || !permModal) return;
+    const enable = permModal === "grant";
     setPermBusy(true);
     const res = await setPermanentAccess(userId, enable);
     setPermBusy(false);
@@ -410,6 +415,7 @@ export default function AdminUserDetailPage() {
           }
         : prev,
     );
+    setPermModal(null);
   }
 
   function openBanModal() {
@@ -959,6 +965,94 @@ export default function AdminUserDetailPage() {
         </p>
       </div>
     </div>
+
+    {permModal && createPortal(
+      <div
+        className="fixed inset-0 z-[200] flex items-center justify-center p-4 sm:p-6 bg-black/70 backdrop-blur-sm"
+        onClick={closePermModal}
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="perm-modal-title"
+      >
+        <div
+          className="relative w-full max-w-md rounded-2xl border border-border bg-surface shadow-2xl"
+          onClick={(e) => e.stopPropagation()}
+        >
+          <div className="flex items-start justify-between gap-3 px-5 py-4 border-b border-border">
+            <div className="min-w-0">
+              <h2
+                id="perm-modal-title"
+                className="font-display font-bold text-lg flex items-center gap-2 text-foreground"
+              >
+                <Crown className={`w-5 h-5 flex-shrink-0 ${permModal === "grant" ? "text-amber" : "text-muted-foreground"}`} />
+                {permModal === "grant" ? "Give permanent access" : "Remove permanent access"}
+              </h2>
+              <p className="text-xs text-muted-foreground mt-1 leading-relaxed">
+                {permModal === "grant"
+                  ? `${displayName} gets full access for good, whatever their balance or broker.`
+                  : `${displayName} goes back to the normal rank and broker / IB rules.`}
+              </p>
+            </div>
+            <button
+              type="button"
+              onClick={closePermModal}
+              disabled={permBusy}
+              className="p-1.5 -mt-0.5 -me-1 hover:bg-surface-soft rounded-md transition flex-shrink-0 disabled:opacity-50"
+              aria-label="Close"
+            >
+              <X className="w-5 h-5 text-muted-foreground hover:text-foreground" />
+            </button>
+          </div>
+
+          <div className="px-5 py-4">
+            <ul className="space-y-2 text-sm text-foreground">
+              {(permModal === "grant"
+                ? [
+                    "Top rank, always - no balance or lots needed",
+                    "Ambassador-level access to every feature",
+                    "No broker connection or daily IB check",
+                    "The member gets an in-app notification",
+                  ]
+                : [
+                    "Rank follows their balance again",
+                    "Broker connection and the daily IB check apply again",
+                    "The ambassador flag is removed too",
+                  ]
+              ).map((line) => (
+                <li key={line} className="flex items-start gap-2">
+                  <span className={`mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0 ${permModal === "grant" ? "bg-amber" : "bg-muted-foreground"}`} />
+                  <span>{line}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="flex items-center justify-end gap-2 px-5 py-4 border-t border-border">
+            <button
+              type="button"
+              onClick={closePermModal}
+              disabled={permBusy}
+              className="px-3 py-2 rounded-lg text-sm font-semibold border border-border text-muted-foreground hover:bg-surface-soft hover:text-foreground disabled:opacity-50 transition"
+            >
+              Cancel
+            </button>
+            <button
+              type="button"
+              onClick={() => void confirmPermanentAccess()}
+              disabled={permBusy}
+              className={`px-3 py-2 rounded-lg text-sm font-semibold border disabled:opacity-50 transition ${
+                permModal === "grant"
+                  ? "border-amber/40 bg-amber/10 text-amber hover:bg-amber/20"
+                  : "border-border bg-surface-soft text-foreground hover:bg-surface-soft/70"
+              }`}
+            >
+              {permBusy ? "Saving…" : permModal === "grant" ? "Give permanent access" : "Remove permanent access"}
+            </button>
+          </div>
+        </div>
+      </div>,
+      document.body,
+    )}
 
     {banModal && createPortal(
       <div

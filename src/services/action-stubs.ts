@@ -142,6 +142,17 @@ export async function unbanUser(userId: string): Promise<ActionResult> {
     return { ok: false, error: apiErrorMessage(e, "Could not unban user.") };
   }
 }
+
+/** Grant / remove permanent access (super admins only - backend SuperAdminGuard). */
+export async function setPermanentAccess(userId: string, enabled: boolean): Promise<ActionResult> {
+  try {
+    const res = await postApi<ActionResult>("/api/admin/data/permanent-access", { userId, enabled });
+    if (res.error || res.ok === false) return { ok: false, error: res.error ?? "Could not update permanent access." };
+    return { ok: true };
+  } catch (e) {
+    return { ok: false, error: apiErrorMessage(e, "Could not update permanent access.") };
+  }
+}
 export async function requestScannerAccess(username: string): Promise<ActionResult> {
   try {
     const res = await postApi<{ ok?: true; error?: string }>(

@@ -5,7 +5,7 @@ import { createClient } from "@/lib/supabase/client";
 import {
   ArrowLeft, Send, Flame, Zap, DollarSign, TrendingUp, LogIn, LogOut, Eye, Clock, Wallet,
   ShieldCheck, ShieldAlert, Landmark, Award, Users as UsersIcon, FileText, ListTree, UserCircle,
-  LineChart, BarChart2, Ban, ShieldOff, X,
+  LineChart, BarChart2, Ban, ShieldOff, X, Crown,
 } from "lucide-react";
 import React, { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
@@ -21,7 +21,7 @@ import {
   type LifecycleEventRow,
 } from "@/components/admin/LifecycleEventsSection";
 import { toast } from "sonner";
-import { startViewAs, banUser, unbanUser } from "@/services/action-stubs";
+import { startViewAs, banUser, unbanUser, setPermanentAccess } from "@/services/action-stubs";
 
 const PLATFORM_URL = (
   (import.meta.env.VITE_PLATFORM_URL as string | undefined) ??
@@ -210,6 +210,15 @@ export default function AdminUserDetailPage() {
   const [loading, setLoading] = useState(true);
   const [viewAsBusy, setViewAsBusy] = useState(false);
   const [banBusy, setBanBusy] = useState(false);
+  const [permBusy, setPermBusy] = useState(false);
+  const [isSuperAdmin, setIsSuperAdmin] = useState(false);
+  useEffect(() => {
+    // Permanent access is a super-admin grant; other roles never see the button.
+    (createClient() as any).rpc("has_role", { _role: "super_admin" }).then(
+      ({ data: isSuper }: { data: unknown }) => setIsSuperAdmin(isSuper === true),
+      () => setIsSuperAdmin(false),
+    );
+  }, []);
   const [banModal, setBanModal] = useState<"ban" | "unban" | null>(null);
   const [banReason, setBanReason] = useState("");
 
@@ -374,6 +383,35 @@ export default function AdminUserDetailPage() {
     toast.success(`Opening read-only view as ${res.user.name ?? res.user.email ?? "user"}`);
   }
 
+  async function togglePermanentAccess() {
+    if (!userId || !data?.profile) return;
+    const enable = !data.profile.permanent_access;
+    const ok = window.confirm(
+      enable
+        ? "Give this member permanent access? They get full access at the top rank, as an ambassador, with no broker / IB requirement."
+        : "Remove permanent access? The member goes back to the normal rank and IB rules (the ambassador flag is removed too).",
+    );
+    if (!ok) return;
+    setPermBusy(true);
+    const res = await setPermanentAccess(userId, enable);
+    setPermBusy(false);
+    if (!res.ok) { toast.error(res.error); return; }
+    toast.success(enable ? "Permanent access granted" : "Permanent access removed");
+    setData((prev) =>
+      prev
+        ? {
+            ...prev,
+            profile: {
+              ...prev.profile,
+              permanent_access: enable,
+              permanent_access_granted_at: enable ? new Date().toISOString() : null,
+              is_ambassador: enable,
+            },
+          }
+        : prev,
+    );
+  }
+
   function openBanModal() {
     if (!data?.profile) return;
     setBanReason("");
@@ -482,6 +520,7 @@ export default function AdminUserDetailPage() {
                 </span>
               )}
               <span className="text-[10px] uppercase tracking-wider px-2 py-0.5 rounded font-bold border bg-surface-soft border-border text-muted-foreground">tier {p.tier ?? 0}</span>
+              {p.permanent_access && <span title={p.permanent_access_granted_at ? `Granted ${new Date(p.permanent_access_granted_at).toLocaleDateString()}` : undefined} className="text-[10px] uppercase tracking-wider px-2 py-0.5 rounded font-bold border bg-amber-dim text-amber border-amber/30">permanent access</span>}
               {p.is_ambassador && <span className="text-[10px] uppercase tracking-wider px-2 py-0.5 rounded font-bold border bg-purple-dim text-purple border-purple/30">ambassador</span>}
               {p.country && <span className="text-[11px] text-muted-foreground">{p.country}</span>}
               {p.created_at && <span className="text-[11px] text-muted-foreground flex items-center gap-1"><Clock className="w-3 h-3" /> joined {new Date(p.created_at).toLocaleDateString()}</span>}
@@ -489,6 +528,20 @@ export default function AdminUserDetailPage() {
           </div>
         </div>
         <div className="flex items-center gap-2 flex-wrap">
+          {isSuperAdmin && (
+            <button
+              onClick={togglePermanentAccess}
+              disabled={permBusy}
+              title={p.permanent_access ? "Remove permanent access" : "Give permanent full access (top rank, no IB requirement)"}
+              className={`flex items-center gap-1.5 px-3 py-2 rounded-lg text-sm font-semibold border disabled:opacity-50 transition whitespace-nowrap ${
+                p.permanent_access
+                  ? "border-border text-muted-foreground hover:bg-surface-soft"
+                  : "border-amber/40 text-amber hover:bg-amber/10"
+              }`}
+            >
+              <Crown className="w-4 h-4" /> {permBusy ? "Saving…" : p.permanent_access ? "Remove permanent access" : "Permanent access"}
+            </button>
+          )}
           <button
             onClick={openBanModal}
             disabled={banBusy}

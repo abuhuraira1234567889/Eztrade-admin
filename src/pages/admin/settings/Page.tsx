@@ -102,7 +102,7 @@ export default function AdminSettingsPage() {
 
       {needsMigration && (
         <div className="rounded-lg border border-amber-500/40 bg-amber-500/10 px-4 py-3 text-sm text-amber-900 dark:text-amber-100">
-          Showing defaults — the <code className="text-xs">platform_settings</code> table isn’t in
+          Showing defaults - the <code className="text-xs">platform_settings</code> table isn’t in
           the database yet. Run <code className="text-xs">schema/182_platform_settings.sql</code> in
           the Supabase SQL Editor to make edits persist.
         </div>

@@ -190,7 +190,7 @@ export function FreeAccessManager() {
           FLOOR, not a ceiling: it lifts the funding block for the modules you tick, and the
           member also keeps anything their own rank unlocks (shown as “· by rank” below), so
           reaching a rank restores that module without you ticking it. Overrides rank /
-          subscription gates for the selected modules only — does not change their rank, payments,
+          subscription gates for the selected modules only - does not change their rank, payments,
           or account status. Ban and IB checks still apply.
         </p>
       </div>
@@ -376,8 +376,8 @@ export function FreeAccessManager() {
                 {grants.map((g) => (
                   <tr key={g.userId} className="border-t border-border align-top">
                     <td className="px-4 py-3">
-                      <div className="font-display font-bold">{g.name ?? "—"}</div>
-                      <div className="text-xs text-muted-foreground">{g.email ?? "—"}</div>
+                      <div className="font-display font-bold">{g.name ?? "-"}</div>
+                      <div className="text-xs text-muted-foreground">{g.email ?? "-"}</div>
                       <div className="text-[10px] text-muted-foreground mt-0.5">
                         {g.rank > 0 ? `Rank ${g.rank}` : "Unranked"}
                       </div>
@@ -396,7 +396,7 @@ export function FreeAccessManager() {
                             }
                             title={
                               g.rankEarnedModules.includes(key)
-                                ? `Ticked, but their rank already unlocks this — the tick is redundant.`
+                                ? `Ticked, but their rank already unlocks this - the tick is redundant.`
                                 : undefined
                             }
                           >
@@ -409,7 +409,7 @@ export function FreeAccessManager() {
                             <span
                               key={key}
                               className="inline-flex rounded-md border border-border text-muted-foreground text-[10px] font-semibold px-1.5 py-0.5"
-                              title="Not ticked — their rank unlocks this on its own."
+                              title="Not ticked - their rank unlocks this on its own."
                             >
                               {labelFor(key)} · by rank
                             </span>

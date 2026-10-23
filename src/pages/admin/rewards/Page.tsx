@@ -17,7 +17,7 @@ import {
 import { listAssets } from "@/services/assets-admin";
 
 const money = (n: number | null) =>
-  n == null ? "—" : Number(n).toLocaleString("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 });
+  n == null ? "-" : Number(n).toLocaleString("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 });
 const xp = (n: number) => `${Number(n).toLocaleString("en-US")} XP`;
 
 type Draft = {
@@ -134,7 +134,7 @@ export default function AdminRewardsPage() {
           <div>
             <h1 className="text-2xl font-display font-bold text-foreground">XP Rewards</h1>
             <p className="text-sm text-muted-foreground">
-              The XP Shop catalogue. Add rewards, set their XP cost and image — members see active rewards instantly.
+              The XP Shop catalogue. Add rewards, set their XP cost and image - members see active rewards instantly.
             </p>
           </div>
         </div>

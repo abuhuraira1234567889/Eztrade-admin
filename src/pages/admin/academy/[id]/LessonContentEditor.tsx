@@ -135,7 +135,7 @@ export function LessonContentEditor({ lesson, onSaved }: { lesson: LessonRow; on
               </button>
             </div>
           ))}
-          {concepts.length === 0 && <div className="text-muted-foreground">No concepts — the Key concepts block is hidden.</div>}
+          {concepts.length === 0 && <div className="text-muted-foreground">No concepts - the Key concepts block is hidden.</div>}
         </div>
       </div>
 

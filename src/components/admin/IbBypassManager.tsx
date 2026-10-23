@@ -10,9 +10,9 @@ import {
 } from "@/services/action-stubs";
 
 function dateLabel(iso: string | null) {
-  if (!iso) return "—";
+  if (!iso) return "-";
   const d = new Date(iso);
-  if (Number.isNaN(d.getTime())) return "—";
+  if (Number.isNaN(d.getTime())) return "-";
   return d.toLocaleDateString(undefined, { day: "numeric", month: "short", year: "numeric" });
 }
 
@@ -21,7 +21,7 @@ function MemberState({ member }: { member: IbBypassEntry["member"] }) {
   if (!member) {
     return (
       <span className="text-xs text-muted-foreground">
-        No account yet — applies when they sign up
+        No account yet - applies when they sign up
       </span>
     );
   }
@@ -85,7 +85,7 @@ export function IbBypassManager() {
         setNote("");
         setSuccess(
           r.restored
-            ? `${clean} added — their existing IB restriction was lifted and access restored.`
+            ? `${clean} added - their existing IB restriction was lifted and access restored.`
             : `${clean} added. They will skip the IB check from now on.`,
         );
         await refresh();
@@ -116,7 +116,7 @@ export function IbBypassManager() {
           Accounts listed here clear every verification gate in onboarding: the TradeQuo 6-digit
           email code (no code is sent and the step never appears), the “is this broker UID under
           our IB?” check at Step 1, and the same check in the daily{" "}
-          <code>ib-daily-verification</code> run — so they can never fall into grace or revoked.
+          <code>ib-daily-verification</code> run - so they can never fall into grace or revoked.
           Use it for staff, reviewers and partners who were never meant to go under the IB. This is
           the account email they <strong>sign in with</strong>, not an address typed into the
           onboarding form. It can be added before that person signs up.
@@ -124,7 +124,7 @@ export function IbBypassManager() {
         <p className="mt-2 text-sm text-muted-foreground max-w-3xl">
           Two things are deliberately still enforced. <strong>Uniqueness</strong>: a broker UID or
           broker email already claimed by another member is still refused, because two members on
-          one broker account makes balance and rank ambiguous for both — it only fires on a real
+          one broker account makes balance and rank ambiguous for both - it only fires on a real
           collision, so it costs an exempt member nothing. And <strong>bans, rank gates and
           lifecycle blocks</strong> are untouched; for those, use Free Access Management above.
         </p>
@@ -169,7 +169,7 @@ export function IbBypassManager() {
           </label>
           <label className="block">
             <span className="text-xs font-semibold text-muted-foreground">
-              Note (optional) — why they are exempt
+              Note (optional) - why they are exempt
             </span>
             <input
               type="text"

@@ -164,7 +164,7 @@ export default function AdminMilestonesPage() {
       <div>
         <h1 className="text-2xl font-display font-bold">Milestones</h1>
         <p className="text-sm text-muted-foreground mt-1 max-w-2xl">
-          Tune each milestone badge’s name, threshold, XP — and its image. Click a badge to upload a
+          Tune each milestone badge’s name, threshold, XP - and its image. Click a badge to upload a
           replacement. Changes apply live (within ~60s). “Reset” restores the shipped name/threshold/XP;
           the badge’s revert icon restores the shipped artwork.
         </p>
@@ -172,7 +172,7 @@ export default function AdminMilestonesPage() {
 
       {needsMigration && (
         <div className="rounded-lg border border-amber-500/40 bg-amber-500/10 px-4 py-3 text-sm text-amber-900 dark:text-amber-100">
-          Showing defaults — the <code className="text-xs">milestone_config</code> table isn’t in the
+          Showing defaults - the <code className="text-xs">milestone_config</code> table isn’t in the
           database yet. Run <code className="text-xs">schema/183_milestone_config.sql</code> in the
           Supabase SQL Editor to make edits persist.
         </div>

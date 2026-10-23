@@ -87,7 +87,7 @@ export default function AdminImagesPage() {
       <div>
         <h1 className="text-2xl font-display font-bold">Images</h1>
         <p className="text-sm text-muted-foreground mt-1 max-w-2xl">
-          Replace the platform's bundled artwork — broker logos, marketing visuals, avatars, badges,
+          Replace the platform's bundled artwork - broker logos, marketing visuals, avatars, badges,
           banners and more. Uploads go to your CDN and apply to members live. Reset restores the
           built-in image.
         </p>
@@ -95,7 +95,7 @@ export default function AdminImagesPage() {
 
       {needsMigration && (
         <div className="rounded-lg border border-amber-500/40 bg-amber-500/10 px-4 py-3 text-sm text-amber-900 dark:text-amber-100">
-          Showing defaults — the <code className="text-xs">asset_overrides</code> table isn’t in the
+          Showing defaults - the <code className="text-xs">asset_overrides</code> table isn’t in the
           database yet. Run <code className="text-xs">schema/191_asset_overrides.sql</code> in Supabase.
         </div>
       )}

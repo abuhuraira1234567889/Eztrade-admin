@@ -115,7 +115,7 @@ export default function AdminLegalPage() {
 
       {needsMigration && (
         <div className="rounded-lg border border-amber-500/40 bg-amber-500/10 px-4 py-3 text-sm text-amber-900 dark:text-amber-100">
-          Showing defaults — the <code className="text-xs">legal_documents</code> table isn’t in the
+          Showing defaults - the <code className="text-xs">legal_documents</code> table isn’t in the
           database yet. Run <code className="text-xs">schema/185_legal_documents.sql</code> in Supabase.
         </div>
       )}
@@ -144,11 +144,11 @@ export default function AdminLegalPage() {
           <div className="text-xs">
             {current.isPublished ? (
               <span className="text-emerald-600 dark:text-emerald-400">
-                ● Live — your published version is shown to members.
+                ● Live - your published version is shown to members.
               </span>
             ) : current.hasOverride ? (
               <span className="text-amber-600 dark:text-amber-400">
-                ● Draft saved — members still see the built-in page until you publish.
+                ● Draft saved - members still see the built-in page until you publish.
               </span>
             ) : (
               <span className="text-muted-foreground">
@@ -171,7 +171,7 @@ export default function AdminLegalPage() {
           </div>
           <div>
             <label className="text-xs text-muted-foreground font-semibold" htmlFor="legal-body">
-              Body (markdown — headings #, **bold**, lists, [links](url))
+              Body (markdown - headings #, **bold**, lists, [links](url))
             </label>
             <textarea
               id="legal-body"

@@ -132,14 +132,14 @@ export default function AdminEmailTemplatesPage() {
           The subject, title and body of each member email. Edit from the current content and Save to
           use your own version; Reset restores the built-in default. The shared header/footer branding
           lives under <span className="font-medium">Brand content → Email branding</span>. Changes apply
-          live (within ~60s). Use <code className="text-xs">{"{{variable}}"}</code> placeholders — they're
+          live (within ~60s). Use <code className="text-xs">{"{{variable}}"}</code> placeholders - they're
           filled per member at send time.
         </p>
       </div>
 
       {needsMigration && (
         <div className="rounded-lg border border-amber-500/40 bg-amber-500/10 px-4 py-3 text-sm text-amber-900 dark:text-amber-100">
-          Showing defaults — the <code className="text-xs">email_templates</code> table isn’t in the
+          Showing defaults - the <code className="text-xs">email_templates</code> table isn’t in the
           database yet. Run <code className="text-xs">schema/190_email_templates.sql</code> in Supabase.
         </div>
       )}

@@ -188,7 +188,7 @@ export function AdminTopBar({
  className="pointer-events-none absolute inset-0"
  style={{
  background:
- "radial-gradient(circle at top right, rgba(146,54,218,0.18), transparent 60%)",
+ "radial-gradient(circle at top right, rgba(238,124,44,0.18), transparent 60%)",
  }}
  />
  <div className="relative flex items-center gap-3">

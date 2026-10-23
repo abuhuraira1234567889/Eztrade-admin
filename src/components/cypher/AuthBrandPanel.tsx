@@ -200,7 +200,7 @@ export function AuthBrandPanel() {
           width: 46rem;
           height: 46rem;
           pointer-events: none;
-          background: radial-gradient(circle at center, rgba(146,54,218,.16), transparent 62%);
+          background: radial-gradient(circle at center, rgba(238,124,44,.16), transparent 62%);
           opacity: .10;
           animation: auth-glow 9s var(--ease-transform) infinite alternate;
           will-change: transform, opacity;
@@ -281,7 +281,7 @@ export function AuthBrandPanel() {
         .auth-curve {
           stroke-dasharray: 1;
           stroke-dashoffset: 1;
-          filter: drop-shadow(0 0 6px rgba(146,54,218,.40));
+          filter: drop-shadow(0 0 6px rgba(238,124,44,.40));
           animation: auth-draw 2.4s var(--ease-transform) .55s forwards;
         }
         @keyframes auth-draw { to { stroke-dashoffset: 0; } }

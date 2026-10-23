@@ -169,8 +169,8 @@ export function AdminMobileMenuButton({ roles }: { roles: string[] }) {
  className="pointer-events-none absolute inset-0"
  style={{
  background:
- "radial-gradient(ellipse at top, rgba(146,54,218,0.18), transparent 60%),"+
- "radial-gradient(ellipse at bottom right, rgba(146,54,218,0.10), transparent 50%)",
+ "radial-gradient(ellipse at top, rgba(238,124,44,0.18), transparent 60%),"+
+ "radial-gradient(ellipse at bottom right, rgba(238,124,44,0.10), transparent 50%)",
  }}
  />
 

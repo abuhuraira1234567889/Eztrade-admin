@@ -64,8 +64,8 @@ export function DailyActivityChart({ data, height = 160 }: { data: DailyPoint[];
  <svg viewBox={`0 0 ${W} ${H}`} className="w-full" style={{ height }}>
  <defs>
  <linearGradient id="sg" x1="0" x2="0" y1="0" y2="1">
- <stop offset="0%" stopColor="#9236da" stopOpacity="0.30" />
- <stop offset="100%" stopColor="#9236da" stopOpacity="0" />
+ <stop offset="0%" stopColor="#EE7C2C" stopOpacity="0.30" />
+ <stop offset="100%" stopColor="#EE7C2C" stopOpacity="0" />
  </linearGradient>
  <linearGradient id="dg" x1="0" x2="0" y1="0" y2="1">
  <stop offset="0%" stopColor="#26A69A" stopOpacity="0.30" />
@@ -88,13 +88,13 @@ export function DailyActivityChart({ data, height = 160 }: { data: DailyPoint[];
  />
 
  {/* Lines */}
- <path d={sPath} fill="none" stroke="#9236da" strokeWidth="2" strokeLinejoin="round" strokeLinecap="round" />
+ <path d={sPath} fill="none" stroke="#EE7C2C" strokeWidth="2" strokeLinejoin="round" strokeLinecap="round" />
  <path d={dPath} fill="none" stroke="#26A69A" strokeWidth="2" strokeLinejoin="round" strokeLinecap="round" />
 
  {/* End-point dots */}
  {points.length > 0 && (
  <>
- <circle cx={padX + (points.length - 1) * xStep} cy={ySignup(points[points.length - 1].signups)} r="3.5" fill="#9236da" />
+ <circle cx={padX + (points.length - 1) * xStep} cy={ySignup(points[points.length - 1].signups)} r="3.5" fill="#EE7C2C" />
  <circle cx={padX + (points.length - 1) * xStep} cy={yDep(points[points.length - 1].deposits)} r="3.5" fill="#26A69A" />
  </>
  )}

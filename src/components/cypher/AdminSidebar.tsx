@@ -168,7 +168,7 @@ export function AdminSidebar({ roles }: { roles: string[] }) {
  )}
  style={{
  padding: collapsed ? "10px 0" : "9px 18px",
- borderLeft: isActive ? "3px solid #9236da" : "3px solid transparent",
+ borderLeft: isActive ? "3px solid #EE7C2C" : "3px solid transparent",
  }}
  >
  <Icon className="w-4 h-4 flex-shrink-0" />

@@ -22,7 +22,7 @@ const config: Config = {
  extend: {
  // ── Colors: all driven from globals.css CSS variables ─────────────────
  colors: {
- // Brand purple ramp (sacred - #9236DA primary)
+ // Brand purple ramp (sacred - #EE7C2C primary)
  purple: {
  50: "var(--color-purple-50)",
  100: "var(--color-purple-100)",

@@ -221,7 +221,7 @@ function ProviderBlock({
         </div>
 
         <div className="grid md:grid-cols-2 gap-4">
-          <Field label="Icon (fallback glyph)" hint="aurex · vektor · meridian · halcyon">
+          <Field label="Icon (fallback glyph)" hint="aurex · vektor · lux · retro">
             <input type="text" name="icon" defaultValue={provider.icon ?? ""} className={inputCls} />
           </Field>
           <Field label="Logo" hint="Custom image shown on the provider page. Overrides the icon.">

@@ -12,7 +12,7 @@ export type SessionBanner = {
 
 const KEYS = [
   { key: "aurex", label: "Aurex" },
-  { key: "meridian", label: "Meridian" },
+  { key: "lux", label: "Lux" },
   { key: "founder-ama", label: "Founder AMA" },
   { key: "weekly-recap", label: "Weekly Recap" },
   { key: "market-breakdown", label: "Market Breakdown" },

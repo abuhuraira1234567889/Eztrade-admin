@@ -107,12 +107,12 @@
         "desc": "Tight stops, fast targets. M5 / M15 setups for active traders during London + NY sessions."
       },
       "2": {
-        "name": "Meridian",
+        "name": "Lux",
         "tagline": "Swing & position",
         "desc": "Daily / 4H setups for traders who can't watch the screen all day. Hold for days, not minutes."
       },
       "3": {
-        "name": "Halcyon",
+        "name": "Retro",
         "tagline": "Minimal high-conviction",
         "desc": "One or two signals a day, max. Curated by senior analysts when the chart is screaming at us."
       }

@@ -9,8 +9,8 @@
   "streams": {
     "aurex": { "tagline": "Multi-confluence flagship" },
     "vektor": { "tagline": "Short-term scalper" },
-    "meridian": { "tagline": "Swing & position" },
-    "halcyon": { "tagline": "Minimal high-conviction" }
+    "lux": { "tagline": "Swing & position" },
+    "retro": { "tagline": "Minimal high-conviction" }
   },
   "stats": {
     "callsThisWeek": "Calls this week",
@@ -83,7 +83,7 @@
     "newMessageFallback": "New message in the feed",
     "empty": {
       "title": "Nothing in the feed yet",
-      "body": "Aurex, Vektor, Meridian, Halcyon and Announcements land here as analysts post."
+      "body": "Aurex, Vektor, Lux, Retro and Announcements land here as analysts post."
     },
     "day": {
       "today": "Today",
